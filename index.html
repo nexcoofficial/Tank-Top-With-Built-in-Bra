@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience premium sound quality with AudioTech Pro's wireless headphones. Noise cancellation, 30-hour battery life, and exceptional comfort.">
-    <title>Premium Wireless Headphones | AudioTech Pro</title>
+    <title>Loose-fitting Tank Top With Built-in Bra | nexco</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -12,550 +11,504 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0a75ad',
-                        primaryDark: '#075888',
-                        secondary: '#f5f5f5',
-                        accent: '#ff8a00'
-                    },
-                    fontFamily: {
-                        title: ['Montserrat', 'sans-serif'],
-                        body: ['Roboto', 'sans-serif']
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        highlight: '#93c5fd',
+                        accent: '#f97316',
                     }
                 }
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        .split-bg {
-            background: linear-gradient(to right, #ffffff 50%, #f5f9fc 50%);
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
         }
-        @media (max-width: 768px) {
-            .split-bg {
-                background: linear-gradient(to bottom, #ffffff 50%, #f5f9fc 50%);
-            }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
         }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+        
         .testimonial-card {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
         }
+        
         .testimonial-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
+        
+        .gallery-image {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .variant-btn {
+            transition: all 0.2s ease;
+        }
+        
+        .variant-btn:hover, .variant-btn.selected {
+            border-color: #1e40af;
+            background-color: #eff6ff;
+        }
+        
         .paypal-btn {
             transition: all 0.3s ease;
         }
+        
         .paypal-btn:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 15px rgba(0, 109, 178, 0.3);
+            background-color: #002f86;
+            transform: translateY(-2px);
         }
-        .faq-item {
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        @media (min-width: 1024px) {
+            .split-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                gap: 4rem;
+            }
+        }
+        
+        .product-highlight {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-highlight::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, rgba(255,255,255,0) 70%);
+            z-index: 0;
+        }
+        
+        .size-chart-container {
             transition: all 0.3s ease;
         }
-        .faq-item:hover {
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .headphone-image {
-            transition: transform 0.5s ease;
-        }
-        .headphone-image:hover {
-            transform: rotate(-5deg);
+        
+        .size-chart-container:hover {
+            transform: scale(1.02);
         }
     </style>
 </head>
-<body class="font-body">
+<body class="bg-gray-50">
     <!-- Header -->
-    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center mr-2">
-                    <i class="fas fa-headphones text-white text-xl"></i>
+    <header class="header-gradient text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="h-10 mr-3">
+                    <h1 class="text-xl font-bold">nexco</h1>
                 </div>
-                <h1 class="text-xl md:text-2xl font-title font-bold text-primary">AudioTech Pro</h1>
-            </div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
-                <a href="#specs" class="text-gray-600 hover:text-primary">Specifications</a>
-                <a href="#pricing" class="text-gray-600 hover:text-primary">Pricing</a>
-                <a href="#testimonials" class="text-gray-600 hover:text-primary">Reviews</a>
-            </nav>
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600">
-                    <i class="fas fa-bars text-xl"></i>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-blue-200 transition">Features</a>
+                    <a href="#gallery" class="hover:text-blue-200 transition">Gallery</a>
+                    <a href="#testimonials" class="hover:text-blue-200 transition">Testimonials</a>
+                    <a href="#pricing" class="hover:text-blue-200 transition">Buy Now</a>
+                </nav>
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
                 </button>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden py-4 bg-white shadow-lg">
-            <div class="container mx-auto px-4 flex flex-col space-y-3">
-                <a href="#features" class="text-gray-600 hover:text-primary py-2">Features</a>
-                <a href="#specs" class="text-gray-600 hover:text-primary py-2">Specifications</a>
-                <a href="#pricing" class="text-gray-600 hover:text-primary py-2">Pricing</a>
-                <a href="#testimonials" class="text-gray-600 hover:text-primary py-2">Reviews</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section - Split Screen -->
-    <section class="split-bg">
-        <div class="container mx-auto px-4 py-16 md:py-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="flex justify-center">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800" alt="Premium Wireless Headphones" class="rounded-xl shadow-xl w-full max-w-lg headphone-image">
-                        <div class="absolute -bottom-5 -right-5 bg-accent text-white px-4 py-2 rounded-lg font-bold">
-                            33% OFF
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="text-primary font-bold uppercase tracking-wider mb-3">Premium Sound Experience</div>
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 font-title text-gray-800">Premium Wireless Headphones</h1>
-                    <p class="text-gray-600 text-lg mb-8">Experience crystal-clear audio with industry-leading noise cancellation, exceptional comfort, and a remarkable 30-hour battery life.</p>
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="split-section">
+                <div class="text-center md:text-left">
+                    <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">Limited Time Offer</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-6 mb-4 text-gray-800">Experience Ultimate Comfort with Our <span class="text-primary">Built-in Bra</span> Tank Top</h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">Wire-free comfort that moves with you. Perfect for yoga, running, or everyday wear.</p>
                     
-                    <div class="flex items-center mb-6">
-                        <div class="flex text-yellow-400 mr-4">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <div class="flex flex-col sm:flex-row items-center gap-4 mb-8">
+                        <div class="flex items-center text-accent font-bold">
+                            <i class="fas fa-star text-xl"></i>
+                            <i class="fas fa-star text-xl"></i>
+                            <i class="fas fa-star text-xl"></i>
+                            <i class="fas fa-star text-xl"></i>
+                            <i class="fas fa-star text-xl"></i>
+                            <span class="ml-2 text-gray-800">4.9/5 (850+ reviews)</span>
                         </div>
-                        <span class="text-gray-600">4.9/5 (1,237 Reviews)</span>
-                    </div>
-                    
-                    <div class="mb-8">
-                        <div class="text-3xl font-bold text-gray-800">
-                            <span class="text-accent">$149.99</span> 
-                            <span class="text-gray-500 text-xl line-through">$224.99</span>
+                        <div class="flex items-center text-green-600">
+                            <i class="fas fa-check-circle mr-1"></i>
+                            <span>Free US Shipping</span>
                         </div>
-                        <p class="text-gray-500">Limited time offer</p>
                     </div>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
-                            <input type="hidden" name="cmd" value="_xclick">
-                            <input type="hidden" name="business" value="audiotech@gmail.com">
-                            <input type="hidden" name="item_name" value="Premium Wireless Headphones">
-                            <input type="hidden" name="amount" value="149.99">
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="hidden" name="return" value="https://audiotech.com/thanks.html">
-                            <input type="hidden" name="cancel_return" value="https://audiotech.com/thanks.html">
-                            <button type="submit" class="paypal-btn bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-md w-full sm:w-auto transition duration-300">
-                                <i class="fab fa-paypal mr-2"></i> Buy Now - $149.99
-                            </button>
-                        </form>
-                        <button class="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-full font-bold shadow-md transition duration-300">
-                            Learn More
-                        </button>
+                        <a href="#pricing" class="bg-primary hover:bg-blue-800 text-white text-lg font-semibold py-4 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                            Shop Now - $15.99
+                        </a>
+                        <a href="#gallery" class="border-2 border-primary text-primary font-semibold py-4 px-8 rounded-lg shadow-sm hover:bg-blue-50 transition">
+                            View Gallery
+                        </a>
                     </div>
                     
-                    <div class="mt-8 flex flex-wrap gap-4">
-                        <div class="flex items-center text-gray-600">
-                            <i class="fas fa-shipping-fast text-primary mr-2"></i>
-                            <span>Free Shipping</span>
-                        </div>
-                        <div class="flex items-center text-gray-600">
-                            <i class="fas fa-undo text-primary mr-2"></i>
-                            <span>30-Day Returns</span>
-                        </div>
-                        <div class="flex items-center text-gray-600">
-                            <i class="fas fa-shield-alt text-primary mr-2"></i>
-                            <span>2-Year Warranty</span>
+                    <div class="mt-8 flex items-center justify-center md:justify-start">
+                        <div class="flex space-x-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-1"></i>
+                                <span>30-Day Returns</span>
+                            </div>
+                            <div class="flex items-center ml-4">
+                                <i class="fas fa-check-circle text-green-500 mr-1"></i>
+                                <span>Secure Payment</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Badges Section -->
-    <section class="py-12 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 font-title">Trusted by Audio Professionals</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Our headphones are used by industry experts and loved by thousands of customers worldwide</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
-                <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center justify-center">
-                    <div class="text-4xl font-bold text-primary mb-2">2M+</div>
-                    <div class="text-gray-600">Happy Customers</div>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Gold_Star.svg" alt="Top Rated" class="h-16 w-16 mb-3">
-                    <div class="text-gray-600">Top Rated Product</div>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center justify-center">
-                    <i class="fas fa-medal text-yellow-500 text-5xl mb-3"></i>
-                    <div class="text-gray-600">Award Winning</div>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col items-center justify-center">
-                    <div class="flex">
-                        <i class="fab fa-cc-visa text-3xl text-gray-600 mx-2"></i>
-                        <i class="fab fa-cc-mastercard text-3xl text-gray-600 mx-2"></i>
-                        <i class="fab fa-cc-amex text-3xl text-gray-600 mx-2"></i>
-                        <i class="fab fa-cc-paypal text-3xl text-gray-600 mx-2"></i>
+                <div class="mt-12 md:mt-0 flex justify-center relative">
+                    <div class="relative max-w-md">
+                        <img src="https://cdn.webfastcdn.com/image/64cc6e2ea048230143713170b4dac873c97f7bd7-700.jpeg" 
+                             alt="Tank Top Front" 
+                             class="w-full h-auto rounded-xl shadow-2xl transform rotate-3">
+                        <img src="https://cdn.webfastcdn.com/image/5e3a2c03dd4639e814c982ecf7a25185c1a6419f-600.jpeg" 
+                             alt="Tank Top Side" 
+                             class="absolute -bottom-6 -right-6 w-3/5 h-auto rounded-xl shadow-2xl border-4 border-white transform -rotate-3">
                     </div>
-                    <div class="text-gray-600 mt-3">Secure Payments</div>
+                    <div class="absolute top-4 -left-4 bg-white rounded-full p-3 shadow-lg">
+                        <i class="fas fa-heart text-red-500 text-2xl"></i>
+                    </div>
+                    <div class="absolute bottom-10 -right-4 bg-white rounded-full p-3 shadow-lg">
+                        <i class="fas fa-bolt text-yellow-500 text-2xl"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-16">
+    <section id="features" class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 font-title">Advanced Features</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Premium technology for an exceptional listening experience</p>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Designed for <span class="text-primary">Comfort</span> and <span class="text-accent">Performance</span></h2>
+                <p class="text-gray-600">Experience the perfect combination of style and function with our premium built-in bra tank top.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="feature-card bg-white rounded-xl p-8 shadow-md border border-gray-100 transition duration-300">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-volume-off text-2xl"></i>
+                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-spa text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Active Noise Cancellation</h3>
-                    <p class="text-gray-600">Block out distractions with advanced noise cancellation technology that adapts to your environment.</p>
+                    <h3 class="text-xl font-bold mb-3">Breathable Comfort</h3>
+                    <p class="text-gray-600 mb-4">Our moisture-wicking fabric keeps you cool and dry during intense workouts or hot summer days.</p>
                 </div>
                 
-                <div class="feature-card bg-white rounded-xl p-8 shadow-md border border-gray-100 transition duration-300">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-battery-full text-2xl"></i>
+                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-running text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">30-Hour Battery Life</h3>
-                    <p class="text-gray-600">Enjoy 30 hours of continuous playback on a single charge, with quick-charge capabilities.</p>
+                    <h3 class="text-xl font-bold mb-3">Perfect Support</h3>
+                    <p class="text-gray-600 mb-4">Seamless built-in bra provides medium support without wires, so you can move freely without restrictions.</p>
                 </div>
                 
-                <div class="feature-card bg-white rounded-xl p-8 shadow-md border border-gray-100 transition duration-300">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-microphone text-2xl"></i>
+                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cut text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Clear Voice Capture</h3>
-                    <p class="text-gray-600">Tri-microphone system ensures crystal clear voice quality for calls and voice assistants.</p>
+                    <h3 class="text-xl font-bold mb-3">Flattering Design</h3>
+                    <p class="text-gray-600 mb-4">Loose-fitting silhouette with strategic seaming creates a figure-flattering look for all body types.</p>
                 </div>
                 
-                <div class="feature-card bg-white rounded-xl p-8 shadow-md border border-gray-100 transition duration-300">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-tachometer-alt text-2xl"></i>
+                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Instant Pairing</h3>
-                    <p class="text-gray-600">Bluetooth 5.0 technology for seamless connectivity and pairing with your devices in seconds.</p>
+                    <h3 class="text-xl font-bold mb-3">Eco-Friendly Materials</h3>
+                    <p class="text-gray-600 mb-4">Made from recycled polyester and sustainable materials without compromising on comfort or durability.</p>
                 </div>
                 
-                <div class="feature-card bg-white rounded-xl p-8 shadow-md border border-gray-100 transition duration-300">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-weight text-2xl"></i>
+                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tshirt text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Ultra Comfort Design</h3>
-                    <p class="text-gray-600">Premium materials provide exceptional comfort even during extended listening sessions.</p>
+                    <h3 class="text-xl font-bold mb-3">Versatile Styling</h3>
+                    <p class="text-gray-600 mb-4">Perfect alone or layered under jackets or cardigans. Transition seamlessly from gym to street.</p>
                 </div>
                 
-                <div class="feature-card bg-white rounded-xl p-8 shadow-md border border-gray-100 transition duration-300">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-water text-2xl"></i>
+                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-gem text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Sweat & Water Resistant</h3>
-                    <p class="text-gray-600">IPX4 rated for sweat and water resistance - perfect for workouts and active lifestyles.</p>
+                    <h3 class="text-xl font-bold mb-3">Premium Quality</h3>
+                    <p class="text-gray-600 mb-4">Designed to last with reinforced stitching and color-fast materials that maintain their shape and hue wash after wash.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Showcase -->
-    <section class="py-16 bg-gray-50">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800" alt="Premium Headphones" class="rounded-xl shadow-xl">
-                </div>
-                <div>
-                    <h2 class="text-3xl font-bold mb-6 font-title text-gray-800">Immersive Audio Experience</h2>
-                    <p class="text-gray-600 mb-8">Our premium wireless headphones deliver rich, clear sound with deep bass and crisp highs. Custom 40mm drivers with neodymium magnets provide studio-quality audio reproduction.</p>
-                    
-                    <div class="mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-white mr-4">
-                                <i class="fas fa-sliders-h"></i>
-                            </div>
-                            <h3 class="font-bold text-lg text-gray-800">Personalized Sound Profiles</h3>
-                        </div>
-                        <p class="text-gray-600 ml-16">Adjust your listening experience with customizable EQ settings via the companion app.</p>
-                    </div>
-                    
-                    <div class="mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-white mr-4">
-                                <i class="fas fa-hand-holding-usd"></i>
-                            </div>
-                            <h3 class="font-bold text-lg text-gray-800">Exceptional Value</h3>
-                        </div>
-                        <p class="text-gray-600 ml-16">Professional-grade audio quality at a fraction of the cost of similar headphones.</p>
-                    </div>
-                    
-                    <div>
-                        <div class="flex items-center mb-4">
-                            <div class="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-white mr-4">
-                                <i class="fas fa-gift"></i>
-                            </div>
-                            <h3 class="font-bold text-lg text-gray-800">Premium Packaging</h3>
-                        </div>
-                        <p class="text-gray-600 ml-16">Arrives in elegant packaging complete with carrying case and premium accessories.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specifications -->
-    <section id="specs" class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 font-title">Technical Specifications</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Engineered for superior performance and comfort</p>
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">See It In <span class="text-primary">Action</span></h2>
+                <p class="text-gray-600">Discover the perfect fit and style for every occasion with our versatile tank top collection.</p>
             </div>
             
-            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-8 border-b md:border-b-0 md:border-r border-gray-100">
-                        <h3 class="text-lg font-bold mb-4 text-gray-800">Audio</h3>
-                        <ul class="space-y-3">
-                            <li class="flex justify-between border-b border-gray-100 pb-3">
-                                <span class="text-gray-600">Driver Type</span>
-                                <span class="font-medium">40mm dynamic</span>
-                            </li>
-                            <li class="flex justify-between border-b border-gray-100 pb-3">
-                                <span class="text-gray-600">Frequency Response</span>
-                                <span class="font-medium">20Hz - 20kHz</span>
-                            </li>
-                            <li class="flex justify-between border-b border-gray-100 pb-3">
-                                <span class="text-gray-600">Impedance</span>
-                                <span class="font-medium">32 ohms</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span class="text-gray-600">Sound Pressure Level</span>
-                                <span class="font-medium">98dB SPL/mW</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="p-8">
-                        <h3 class="text-lg font-bold mb-4 text-gray-800">Features & Connectivity</h3>
-                        <ul class="space-y-3">
-                            <li class="flex justify-between border-b border-gray-100 pb-3">
-                                <span class="text-gray-600">Battery Life</span>
-                                <span class="font-medium">30 hours playback</span>
-                            </li>
-                            <li class="flex justify-between border-b border-gray-100 pb-3">
-                                <span class="text-gray-600">Charging Time</span>
-                                <span class="font-medium">2 hours (0-100%)</span>
-                            </li>
-                            <li class="flex justify-between border-b border-gray-100 pb-3">
-                                <span class="text-gray-600">Bluetooth Version</span>
-                                <span class="font-medium">5.0 with aptX</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span class="text-gray-600">Wireless Range</span>
-                                <span class="font-medium">30 feet (10m)</span>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="gallery-container">
+                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
+                    <img src="https://cdn.webfastcdn.com/image/64cc6e2ea048230143713170b4dac873c97f7bd7-700.jpeg" 
+                         alt="Black tank top front view" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
+                    <img src="https://cdn.webfastcdn.com/image/0a89208aec4b81d117e1e92b2ad37f6e993069fb-600.jpeg" 
+                         alt="Tank top side view" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
+                    <img src="https://cdn.webfastcdn.com/image/5e3a2c03dd4639e814c982ecf7a25185c1a6419f-600.jpeg" 
+                         alt="Tank top movement" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
+                    <img src="https://cdn.webfastcdn.com/image/bb06c5fba73cb21e3542340d68c3eb189292d916.gif" 
+                         alt="Tank top fabric detail" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
+                    <img src="https://cdn.webfastcdn.com/image/d883a8eac266a895619e24913c9c0c72759d7ab7.webp" 
+                         alt="Tank top color options" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
+                    <img src="https://cdn.webfastcdn.com/image/0a89208aec4b81d117e1e92b2ad37f6e993069fb-700.jpeg" 
+                         alt="Tank top back view" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <!-- Size Chart -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">Find Your Perfect Fit</h3>
+                <div class="size-chart-container bg-white rounded-xl shadow-lg p-6">
+                    <img src="https://cdn.webfastcdn.com/image/f5bcb03b9c85be15b9107f981355b009c293b8d9.png" 
+                         alt="Size chart" 
+                         class="w-full h-auto rounded-lg">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="py-16 bg-gray-50">
+    <section id="testimonials" class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 font-title">Customer Reviews</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Hear from our customers about their experience with our headphones</p>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Real Customers, <span class="text-primary">Real Results</span></h2>
+                <p class="text-gray-600">Join thousands of satisfied customers who love their nexco tank tops.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md transition duration-300">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6">"These headphones exceeded my expectations. The noise cancellation is phenomenal and the sound quality is studio-grade. Best headphones I've ever owned!"</p>
-                    <div class="flex items-center">
-                        <div class="rounded-full h-12 w-12 bg-blue-200 flex items-center justify-center mr-4">
-                            <span class="font-bold text-blue-700">AS</span>
-                        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn.webfastcdn.com/image/c697953a0764d6833ca7582cc6504e8161fc8054-400.webp" 
+                             alt="Sarah M." 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h4 class="font-bold text-gray-800">Alex Smith</h4>
-                            <p class="text-sm text-gray-600">Audio Professional</p>
+                            <h4 class="font-bold text-gray-800">Sarah M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
+                    <p class="text-gray-600 italic">"I wear this tank top everywhere - to the gym, running errands, even out to dinner. The support is perfect and it's so comfortable I forget I'm wearing it!"</p>
                 </div>
                 
-                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md transition duration-300">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6">"The battery life is truly impressive! I can go a whole week without charging. The comfort is also outstanding - I can wear them all day with no discomfort."</p>
-                    <div class="flex items-center">
-                        <div class="rounded-full h-12 w-12 bg-blue-200 flex items-center justify-center mr-4">
-                            <span class="font-bold text-blue-700">TJ</span>
-                        </div>
+                <div class="testimonial-card bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn.webfastcdn.com/image/cb8f9f678be13f2573ca0132a58ec81f3204ca87-400.webp" 
+                             alt="James L." 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h4 class="font-bold text-gray-800">Taylor Johnson</h4>
-                            <p class="text-sm text-gray-600">Graphic Designer</p>
+                            <h4 class="font-bold text-gray-800">James L.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
+                    <p class="text-gray-600 italic">"Bought this for my wife and she loved it so much that I got two more for her birthday. She says it's the most comfortable workout top she owns."</p>
                 </div>
                 
-                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md transition duration-300">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6">"Perfect balance between sound quality, comfort and price. The noise cancellation makes them perfect for my daily commute. Highly recommend!"</p>
-                    <div class="flex items-center">
-                        <div class="rounded-full h-12 w-12 bg-blue-200 flex items-center justify-center mr-4">
-                            <span class="font-bold text-blue-700">ME</span>
-                        </div>
+                <div class="testimonial-card bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn.webfastcdn.com/image/ecf691267d7f4c1f4d6d704968b2a1477e80f505-400.webp" 
+                             alt="Maria K." 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h4 class="font-bold text-gray-800">Maria Evans</h4>
-                            <p class="text-sm text-gray-600">Project Manager</p>
+                            <h4 class="font-bold text-gray-800">Maria K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
+                    <p class="text-gray-600 italic">"The quality is impressive for the price. I've washed it multiple times and the shape and color are just like new. Will definitely be ordering more colors!"</p>
                 </div>
             </div>
             
-            <div class="mt-16 text-center">
-                <div class="inline-flex items-center">
-                    <div class="h-20 w-20 rounded-full border-8 border-blue-100 flex items-center justify-center mr-6">
-                        <span class="text-primary font-bold text-2xl">4.9</span>
+            <div class="mt-12 bg-primary rounded-xl p-8 text-white max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <div class="md:w-2/3 mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-2">Join Our Satisfied Customers</h3>
+                        <p>Experience the comfort and quality for yourself</p>
                     </div>
-                    <div class="text-left">
-                        <div class="text-2xl font-bold">Overall Customer Rating</div>
-                        <div class="flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="text-gray-600">Based on 1,237 reviews</div>
+                    <div class="md:w-1/3 flex justify-center md:justify-end">
+                        <a href="#pricing" class="bg-white text-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition">Shop Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing & CTA -->
-    <section id="pricing" class="py-16 bg-primary">
+    <!-- Pricing & Order Section -->
+    <section id="pricing" class="py-16 bg-gradient-to-br from-blue-50 to-gray-100">
         <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Get Your Perfect <span class="text-primary">Tank Top</span></h2>
+                <p class="text-gray-600">Select your preferred color and size options below</p>
+            </div>
+            
             <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-white font-title">Experience Premium Audio</h2>
-                    <p class="text-blue-100 max-w-2xl mx-auto mt-4">Join thousands of satisfied customers with our premium headphones at an unbeatable price</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-xl p-8 shadow-xl">
-                        <div class="flex justify-between items-start mb-6">
-                            <div>
-                                <h3 class="text-2xl font-bold text-gray-800">Premium Wireless Headphones</h3>
-                                <p class="text-gray-600">All features included</p>
-                            </div>
-                            <div class="bg-accent text-white px-3 py-1 rounded-lg font-bold">
-                                33% OFF
-                            </div>
+                <div class="bg-white rounded-xl shadow-xl p-8">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-2/5 flex justify-center">
+                            <img src="https://cdn.webfastcdn.com/image/0a89208aec4b81d117e1e92b2ad37f6e993069fb-700.jpeg" 
+                                 alt="Tank Top" 
+                                 class="h-80 rounded-lg object-cover">
                         </div>
                         
-                        <div class="mb-6">
-                            <div class="text-4xl font-bold text-gray-800">
-                                <span class="text-accent">$149.99</span> 
-                                <span class="text-gray-500 text-xl line-through">$224.99</span>
+                        <div class="lg:w-3/5">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Loose-fitting Tank Top With Built-in Bra</h3>
+                            <p class="text-gray-600 mb-4">Your everyday essential for comfort and style</p>
+                            
+                            <div class="flex items-center mb-4">
+                                <span class="text-3xl font-bold text-gray-800">$15.99</span>
+                                <span class="ml-4 text-green-600">
+                                    <i class="fas fa-shipping-fast mr-1"></i> Free US Shipping
+                                </span>
                             </div>
-                            <p class="text-gray-500">Limited time offer</p>
-                        </div>
-                        
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                                <span class="text-gray-600">Active Noise Cancellation</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                                <span class="text-gray-600">30-Hour Battery Life</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                                <span class="text-gray-600">Premium Carrying Case</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                                <span class="text-gray-600">2-Year Warranty</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                                <span class="text-gray-600">Free Shipping Worldwide</span>
-                            </li>
-                        </ul>
-                        
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
-                            <input type="hidden" name="cmd" value="_xclick">
-                            <input type="hidden" name="business" value="audiotech@gmail.com">
-                            <input type="hidden" name="item_name" value="Premium Wireless Headphones">
-                            <input type="hidden" name="amount" value="149.99">
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="hidden" name="return" value="https://audiotech.com/thanks.html">
-                            <input type="hidden" name="cancel_return" value="https://audiotech.com/thanks.html">
-                            <button type="submit" class="paypal-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-full font-bold w-full shadow-md transition duration-300">
-                                <i class="fab fa-paypal mr-2"></i> Buy Now - $149.99
-                            </button>
-                        </form>
-                    </div>
-                    
-                    <div class="flex items-center">
-                        <div class="bg-blue-800 bg-opacity-40 rounded-xl p-8 h-full w-full">
-                            <div class="flex flex-col items-center text-white text-center h-full justify-center">
-                                <div class="flex text-xl mb-6">
-                                    <i class="fas fa-truck text-3xl mr-3"></i>
-                                    <div>
-                                        <div class="font-bold">Free Shipping</div>
-                                        <div class="text-sm text-blue-100">All orders ship within 24 hours</div>
-                                    </div>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-bold text-gray-700 mb-3">Select Color:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-black text-white">Black</button>
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-white">White</button>
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-gray-500 text-white">Grey</button>
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-pink-500 text-white">Pink</button>
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-purple-500 text-white">Purple</button>
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-green-500 text-white">Green</button>
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg" style="background: linear-gradient(to right, black 50%, white 50%);">Black+White</button>
+                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg" style="background: linear-gradient(to right, pink 50%, purple 50%);">Pink+Purple</button>
                                 </div>
-                                
-                                <div class="border-t border-blue-700 border-dashed w-32 my-6"></div>
-                                
-                                <div class="flex text-xl mb-6">
-                                    <i class="fas fa-shield-alt text-3xl mr-3"></i>
-                                    <div>
-                                        <div class="font-bold">2-Year Warranty</div>
-                                        <div class="text-sm text-blue-100">Full replacement coverage</div>
-                                    </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-bold text-gray-700 mb-3">Select Size (UK):</h4>
+                                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">4-6</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">8-10</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">10-12</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">12-16</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">16-20</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">20-24</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">24-26</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">26-30</button>
+                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">30-34</button>
                                 </div>
-                                
-                                <div class="border-t border-blue-700 border-dashed w-32 my-6"></div>
-                                
-                                <div class="flex text-xl">
-                                    <i class="fas fa-hand-holding-usd text-3xl mr-3"></i>
-                                    <div>
-                                        <div class="font-bold">30-Day Returns</div>
-                                        <div class="text-sm text-blue-100">No questions asked</div>
-                                    </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-bold text-gray-700 mb-3">Quantity:</h4>
+                                <div class="flex items-center">
+                                    <button class="bg-gray-200 px-4 py-2 rounded-l-lg hover:bg-gray-300">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="text" value="1" class="w-16 text-center py-2 border-y border-gray-200">
+                                    <button class="bg-gray-200 px-4 py-2 rounded-r-lg hover:bg-gray-300">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
+                                <div class="flex items-center">
+                                    <i class="fas fa-lock text-blue-600 text-2xl mr-3"></i>
+                                    <span class="font-medium">Secure Checkout Guarantee</span>
+                                </div>
+                            </div>
+                            
+                            <!-- PayPal Integration -->
+                            <form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
+                                <input type="hidden" name="cmd" value="_xclick">
+                                <input type="hidden" name="business" value="fadamxyz@gmail.com">
+                                <input type="hidden" name="item_name" value="Loose-fitting Tank Top With Built-in Bra">
+                                <input type="hidden" name="amount" value="15.99">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="hidden" name="return" value="https://nexco.ayunda.xyz/thanks.html">
+                                <input type="hidden" name="cancel_return" value="https://nexco.ayunda.xyz/thanks.html">
+                                <button type="submit" class="paypal-btn w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-4 px-6 rounded-lg mb-4 flex items-center justify-center">
+                                    <i class="fab fa-paypal text-xl mr-3"></i> 
+                                    Checkout Securely with PayPal - $15.99
+                                </button>
+                            </form>
+                            
+                            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-1"></i>
+                                    <span class="text-sm">30-Day Money Back</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-1"></i>
+                                    <span class="text-sm">Free US Shipping</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-1"></i>
+                                    <span class="text-sm">Secure Payment</span>
                                 </div>
                             </div>
                         </div>
@@ -566,99 +519,61 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-16 bg-gray-50">
+    <section id="faq" class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 font-title">Frequently Asked Questions</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Find answers to common questions about our headphones</p>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Frequently <span class="text-primary">Asked</span> Questions</h2>
+                <p class="text-gray-600">Everything you need to know about our tank tops</p>
             </div>
             
-            <div class="max-w-3xl mx-auto space-y-4">
-                <div class="faq-item bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer transition duration-300">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-gray-800">What is the actual battery life?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </div>
-                    <div class="mt-4 text-gray-600 hidden">
-                        The battery life of up to 30 hours applies when using the headphones at about 50% volume without active noise cancellation. With ANC activated, you can expect around 24-26 hours of playback time. The headphones support fast charging - 15 minutes of charging provides up to 5 hours of playback.
-                    </div>
-                </div>
-                
-                <div class="faq-item bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer transition duration-300">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-gray-800">How effective is the noise cancellation?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </div>
-                    <div class="mt-4 text-gray-600 hidden">
-                        Our advanced noise cancellation technology reduces ambient noise by up to 30dB, effectively eliminating background noises like airplane engines, traffic, air conditioning, and office chatter. The adaptive technology automatically adjusts to your environment for optimal performance in any situation.
-                    </div>
-                </div>
-                
-                <div class="faq-item bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer transition duration-300">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-gray-800">Can I use them for phone calls?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </div>
-                    <div class="mt-4 text-gray-600 hidden">
-                        Absolutely! The headphones feature a professional-grade microphone array that provides crystal clear voice pickup. The beamforming technology isolates your voice from background noise, ensuring you sound clear on every call. These headphones are perfect for conference calls and voice assistants.
-                    </div>
-                </div>
-                
-                <div class="faq-item bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer transition duration-300">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-gray-800">What devices are compatible?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </div>
-                    <div class="mt-4 text-gray-600 hidden">
-                        The headphones are compatible with any Bluetooth-enabled device including smartphones (iPhone and Android), tablets, laptops, and even some smart TVs. They also come with a 3.5mm audio cable for wired connections. The companion app is available for both iOS and Android.
-                    </div>
-                </div>
-                
-                <div class="faq-item bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer transition duration-300">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-gray-800">What is included in the box?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </div>
-                    <div class="mt-4 text-gray-600 hidden">
-                        Each package includes: (1) Premium Wireless Headphones, (1) Premium hard-shell carrying case, (1) USB-C charging cable, (1) 3.5mm audio cable, quick start guide, and warranty information. The carrying case has a dedicated compartment for all accessories.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="py-16 bg-gradient-to-r from-primary to-blue-800">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white font-title mb-6">Experience Premium Sound Today</h2>
-                <p class="text-blue-100 max-w-2xl mx-auto mb-10">Transform your audio experience with our top-rated headphones at a limited-time discount</p>
-                
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form max-w-md mx-auto">
-                    <input type="hidden" name="cmd" value="_xclick">
-                    <input type="hidden" name="business" value="audiotech@gmail.com">
-                    <input type="hidden" name="item_name" value="Premium Wireless Headphones">
-                    <input type="hidden" name="amount" value="149.99">
-                    <input type="hidden" name="currency_code" value="USD">
-                    <input type="hidden" name="return" value="https://audiotech.com/thanks.html">
-                    <input type="hidden" name="cancel_return" value="https://audiotech.com/thanks.html">
-                    <button type="submit" class="paypal-btn bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-md w-full transition duration-300">
-                        <i class="fab fa-paypal mr-2"></i> Secure Your Headphones - $149.99
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
+                        <span class="font-medium">What makes your tank tops different?</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
-                </form>
+                    <div class="faq-answer p-5">
+                        <p class="text-gray-600">Our tank tops feature a proprietary seamless built-in bra design that provides comfortable support without the discomfort of underwires. The lightweight, moisture-wicking fabric combined with the loose-fitting silhouette creates a top that's perfect for both workouts and casual wear.</p>
+                    </div>
+                </div>
                 
-                <div class="mt-8 flex flex-wrap justify-center gap-8">
-                    <div class="flex items-center text-blue-200">
-                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
-                        <span>30-Day Money Back Guarantee</span>
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
+                        <span class="font-medium">How do I find the right size?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer p-5">
+                        <p class="text-gray-600">We provide a detailed size chart that matches UK sizes with weight ranges for the perfect fit. If you're between sizes, we recommend sizing up for a looser fit or sizing down for more support. Remember all our tank tops are designed with stretch material for comfortable flexibility.</p>
                     </div>
-                    <div class="flex items-center text-blue-200">
-                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
-                        <span>Free Worldwide Shipping</span>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
+                        <span class="font-medium">How do I care for the tank top?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer p-5">
+                        <p class="text-gray-600">For best results, machine wash cold on gentle cycle with like colors and tumble dry low. Avoid bleaching or ironing directly on printed areas. The high-quality fabric maintains its shape and color through multiple washes when cared for properly.</p>
                     </div>
-                    <div class="flex items-center text-blue-200">
-                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
-                        <span>24/7 Customer Support</span>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
+                        <span class="font-medium">What is your return policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer p-5">
+                        <p class="text-gray-600">We offer a 30-day satisfaction guarantee. If you're not completely happy with your purchase, simply return the unworn tank top with original tags for a full refund or exchange. Return shipping is free within the US. International customers are responsible for return shipping costs.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
+                        <span class="font-medium">How long does shipping take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer p-5">
+                        <p class="text-gray-600">US orders typically ship within 1 business day and arrive in 3-5 business days via USPS. International shipping times vary by destination but typically take 10-20 business days. All customers receive tracking information once their order ships.</p>
                     </div>
                 </div>
             </div>
@@ -666,128 +581,136 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <footer class="bg-gray-900 text-gray-400 pt-16 pb-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                 <div>
-                    <div class="flex items-center mb-6">
-                        <div class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center mr-2">
-                            <i class="fas fa-headphones text-white text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">AudioTech Pro</h3>
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="h-8 mr-2">
+                        <span class="text-white font-bold text-lg">nexco</span>
                     </div>
-                    <p class="text-gray-400 mb-6">Premium audio products engineered for exceptional sound quality and comfort.</p>
+                    <p class="mb-4">Premium athletic wear designed for comfort and performance.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-6">Products</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Wireless Headphones</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Bluetooth Earbuds</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Home Speakers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">New Releases</a></li>
+                    <h4 class="text-white font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Tank Tops</a></li>
+                        <li><a href="#" class="hover:text-white">Leggings</a></li>
+                        <li><a href="#" class="hover:text-white">Sports Bras</a></li>
+                        <li><a href="#" class="hover:text-white">Shorts</a></li>
+                        <li><a href="#" class="hover:text-white">New Arrivals</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-6">Support</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Product Help</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Software Downloads</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Warranty & Repairs</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Support</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                    <h4 class="text-white font-bold mb-4">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Returns & Exchanges</a></li>
+                        <li><a href="#" class="hover:text-white">Size Guide</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
                     <ul class="space-y-3">
                         <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-gray-400 mt-1 mr-3"></i>
-                            <span class="text-gray-400">123 Audio Street, Los Angeles, CA 90001</span>
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                            <span>support@nexco.com</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-envelope text-gray-400 mt-1 mr-3"></i>
-                            <span class="text-gray-400">support@audiotech.com</span>
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>+1 (555) 123-4567</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-phone-alt text-gray-400 mt-1 mr-3"></i>
-                            <span class="text-gray-400">+1 (800) 555-1234</span>
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>123 Fitness St, Active City, AC 12345, USA</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 pt-8 pb-4">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-500 text-sm">© 2023 AudioTech Pro. All rights reserved.</p>
-                    <div class="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
-                        <a href="#" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
-                        <a href="#" class="text-gray-500 hover:text-white text-sm">Shipping Policy</a>
-                        <a href="#" class="text-gray-500 hover:text-white text-sm">Returns Policy</a>
-                    </div>
+            <div class="pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2023 nexco. All rights reserved.</p>
+                <div class="mt-4 flex justify-center space-x-6 text-sm">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Refund Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+        // Quantity selector
+        document.querySelector('.fa-plus').addEventListener('click', function() {
+            const input = document.querySelector('input[type="text"]');
+            let value = parseInt(input.value);
+            input.value = value + 1;
         });
         
-        // FAQ accordion functionality
-        document.querySelectorAll('.faq-item').forEach(item => {
-            const header = item.querySelector('h3').parentElement;
-            const content = item.querySelector('div:last-child');
-            
-            header.addEventListener('click', () => {
-                // Close other items
-                document.querySelectorAll('.faq-item div:last-child').forEach(el => {
-                    if(el !== content && !el.classList.contains('hidden')) {
-                        el.classList.add('hidden');
-                        el.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
-                        el.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
-                    }
-                });
-                
-                // Toggle current item
-                content.classList.toggle('hidden');
-                const icon = header.querySelector('i');
-                icon.classList.toggle('fa-chevron-down');
-                icon.classList.toggle('fa-chevron-up');
+        document.querySelector('.fa-minus').addEventListener('click', function() {
+            const input = document.querySelector('input[type="text"]');
+            let value = parseInt(input.value);
+            if (value > 1) {
+                input.value = value - 1;
+            }
+        });
+        
+        // Variant selection
+        const variantButtons = document.querySelectorAll('.variant-btn');
+        variantButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove selected class from all buttons
+                variantButtons.forEach(btn => btn.classList.remove('selected'));
+                // Add selected class to clicked button
+                this.classList.add('selected');
             });
         });
         
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
                 
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                
+                // Reset all icons
+                document.querySelectorAll('.faq-question i').forEach(icon => {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                });
+                
+                // Toggle current answer
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    this.querySelector('i').classList.remove('fa-chevron-down');
+                    this.querySelector('i').classList.add('fa-chevron-up');
                 }
             });
         });
         
-        // Close mobile menu on click
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('mobile-menu').classList.add('hidden');
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
