@@ -1,231 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buy the LED Digital Watch from Nexco - a modern, stylish timepiece with advanced LED features. Only $26.22 (39% OFF).">
-    <meta name="keywords" content="LED Digital Watch, Nexco, fashion watch, titanium watch, unisex watch">
-    <meta name="author" content="Nexco">
-    <title>LED Digital Watch - Nexco</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .hero-bg { background: linear-gradient(to bottom, #1e3a8a, #3b82f6); }
-        .countdown { font-variant-numeric: tabular-nums; }
-        .paypal-btn { background-color: #FFC107; color: #003087; font-weight: bold; padding: 12px 24px; border-radius: 8px; transition: transform 0.2s; }
-        .paypal-btn:hover { transform: scale(1.05); }
-        .variant-btn { border: 2px solid #3b82f6; padding: 8px 16px; border-radius: 8px; }
-        .variant-btn.active { background-color: #3b82f6; color: white; }
-        .trust-badge { filter: grayscale(0); }
-        img { max-width: 100%; height: auto; }
-        .gallery-img { transition: transform 0.3s; cursor: pointer; }
-        .gallery-img:hover { transform: scale(1.05); }
-        @media (max-width: 640px) {
-            .hero-text { font-size: 2rem; }
-            .paypal-btn { width: 100%; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>LED Digital Watch | nexco</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Buy the stylish LED Digital Watch at 39% OFF. Unisex, titanium, modern design. Fast shipping. Secure PayPal payment. Trusted by customers in the US.">
+  <meta name="keywords" content="LED, Digital Watch, Fashion, Titanium, Unisex, nexco, PayPal, Modern Watch, US">
+  <meta property="og:title" content="LED Digital Watch | nexco">
+  <meta property="og:description" content="A modern, stylish LED Digital Watch. Quality titanium, secure PayPal checkout, fast shipping in the US. Order now!">
+  <meta property="og:image" content="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" type="image/png">
+  <style>
+    :root {
+      --primary: #0d1f36;
+      --accent: #1e90ff;
+      --white: #fff;
+      --black: #111;
+      --gray: #f5f5f7;
+      --shadow: 0 4px 24px rgba(13,31,54,0.08);
+      --radius: 12px;
+      --font-main: 'Inter', Arial, sans-serif;
+    }
+    html { box-sizing: border-box; }
+    *, *:before, *:after { box-sizing: inherit; }
+    body {
+      font-family: var(--font-main);
+      background: var(--gray);
+      color: var(--primary);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      padding: 1.2rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header img.logo { height: 48px; margin-right: 1.2rem; }
+    header .business-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--primary);
+    }
+    main { flex: 1; }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    /* HERO SECTION */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+    .hero-img-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .hero-img-gallery img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      background: var(--white);
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .hero-title {
+      font-size: 2.7rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+      line-height: 1.1;
+    }
+    .hero-desc {
+      font-size: 1.18rem;
+      color: #444;
+      margin-bottom: 0.5rem;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .paypal-btn, .buy-btn {
+      background: var(--accent);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 7px;
+      padding: 0.84rem 2.2rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(30,144,255,0.09);
+      transition: background .18s;
+      display: flex;
+      align-items: center;
+      gap: 0.7em;
+    }
+    .paypal-btn:hover, .buy-btn:hover {
+      background: #185fa3;
+    }
+    .trust-badges {
+      display: flex;
+      align-items: center;
+      gap: 1.3rem;
+      margin-top: 0.4rem;
+    }
+    .trust-badges img {
+      height: 28px;
+      aspect-ratio: 1/1;
+      border-radius: 6px;
+      background: var(--white);
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    }
+    .urgency {
+      color: #e74c3c;
+      font-weight: 600;
+      font-size: 1.06rem;
+      margin-top: 0.2rem;
+      letter-spacing: 0.2px;
+    }
+    /* COUNTDOWN TIMER */
+    .timer-wrap {
+      background: #faf4f0;
+      border-radius: 7px;
+      padding: 0.85em 1.2em;
+      display: inline-block;
+      margin-top: 0.6em;
+    }
+    .timer-label {
+      font-weight: 700;
+      color: #b32d00;
+      margin-right: 0.7em;
+    }
+    .timer {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.23rem;
+      color: #d35400;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    /* PRODUCT SHOWCASE */
+    .product-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.2rem;
+      margin-bottom: 2.5rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.2rem 1.6rem;
+    }
+    .showcase-imgs {
+      display: flex;
+      flex-direction: row;
+      gap: 0.9em;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .showcase-imgs img {
+      width: 110px;
+      border-radius: 8px;
+      object-fit: cover;
+      background: var(--gray);
+    }
+    .showcase-features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .feature-list {
+      padding: 0;
+      margin: 0 0 0.5rem 0;
+      list-style: none;
+    }
+    .feature-list li {
+      margin-bottom: 0.5rem;
+      font-size: 1.08rem;
+      display: flex;
+      align-items: start;
+      gap: 0.6em;
+    }
+    .feature-list li:before {
+      content: '✔️';
+      margin-right: 0.7em;
+      font-size: 1em;
+      color: var(--accent);
+    }
+    .spec-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 0.2rem;
+      font-size: 0.99rem;
+    }
+    .spec-table th, .spec-table td {
+      padding: 0.48em 1em 0.48em 0;
+      text-align: left;
+      color: #222;
+    }
+    .spec-table th {
+      color: #888;
+      font-weight: 400;
+      background: #f8fafd;
+    }
+    /* VARIANTS */
+    .variants {
+      margin: 1.2rem 0 0.7rem 0;
+      display: flex;
+      align-items: flex-end;
+      gap: 1.6rem;
+      flex-wrap: wrap;
+    }
+    .variant-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .variant-label {
+      font-size: 1.01em;
+      margin-bottom: 0.2rem;
+      font-weight: 600;
+    }
+    .variant-select, .qty-input {
+      font-size: 1em;
+      padding: 0.32em 0.75em;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      min-width: 70px;
+      background: #fafbfc;
+      color: #1a202c;
+      outline: none;
+      transition: border 0.17s;
+    }
+    .qty-input { width: 56px; }
+    /* SOCIAL PROOF */
+    .social-proof {
+      margin: 2.7rem 0;
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .testimonials, .reviews {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem 1.1rem;
+    }
+    .testimonials-title, .reviews-title {
+      font-size: 1.18rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      color: #1e90ff;
+    }
+    .testimonial, .review {
+      margin-bottom: 1.1em;
+    }
+    .testimonial:last-child, .review:last-child { margin-bottom: 0; }
+    .testimonial-msg, .review-msg {
+      font-size: 0.99em;
+      color: #222;
+      margin-bottom: 0.3em;
+    }
+    .testimonial-author, .review-author {
+      font-size: 0.96em;
+      color: #888;
+    }
+    .trust-signal-row {
+      display: flex;
+      align-items: center;
+      gap: 0.9em;
+      margin-bottom: 0.7em;
+    }
+    .trust-signal {
+      background: #e6f3ff;
+      padding: 0.34em 0.9em;
+      border-radius: 6px;
+      font-size: 0.98em;
+      color: #185fa3;
+      font-weight: 600;
+    }
+    /* FAQ */
+    .faq-section {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.2rem 1.1rem 2.2rem 2.3rem;
+      margin-bottom: 2.5rem;
+    }
+    .faq-title {
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.1rem;
+    }
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .faq-q {
+      font-weight: 600;
+      margin-bottom: 0.29em;
+      cursor: pointer;
+      color: var(--primary);
+      transition: color 0.12s;
+    }
+    .faq-q:hover { color: var(--accent); }
+    .faq-a {
+      color: #475569;
+      font-size: 1.01em;
+      margin-bottom: 1em;
+      display: none;
+      padding-left: 1.5em;
+      border-left: 2px solid #e6f3ff;
+    }
+    .faq-q.open + .faq-a { display: block; }
+    /* FOOTER */
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      padding: 2rem 0 1.2rem 0;
+      text-align: center;
+      font-size: 1.05rem;
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+      margin-top: 2rem;
+    }
+    footer .footer-links {
+      margin: 0.6rem 0 1.1rem 0;
+      display: flex;
+      gap: 1.2em;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    footer a {
+      color: #b5ddff;
+      text-decoration: none;
+      transition: color 0.13s;
+    }
+    footer a:hover { color: #fff; }
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero, .product-showcase, .social-proof { grid-template-columns: 1fr; }
+      .hero-img-gallery, .showcase-imgs { flex-direction: row; overflow-x: auto; }
+    }
+    @media (max-width: 650px) {
+      .container { padding: 0.7rem; }
+      .hero-title { font-size: 1.34rem; }
+      .hero-content { gap: 0.7rem; }
+      .product-showcase, .faq-section { padding: 1.1rem 0.7rem; }
+      .social-proof { gap: 1.1rem; }
+      .testimonials, .reviews { padding: 0.8rem 0.5rem; }
+    }
+    @media (max-width: 480px) {
+      .product-showcase, .faq-section { padding: 0.4rem 0.1rem; }
+      .hero-content { gap: 0.6rem; }
+      .variants { gap: 0.8rem; }
+      .footer-links { gap: 0.7em; }
+    }
+    /* Accessibility focus */
+    button, select, input:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <!-- Hero Section -->
-    <section class="hero-bg text-white py-16">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 text-center md:text-left">
-                <h1 class="hero-text text-4xl md:text-5xl font-bold mb-4">LED Digital Watch - Style Meets Innovation</h1>
-                <p class="text-lg mb-6">Elevate your style with Nexco's LED Digital Watch. Now only <span class="font-bold">$26.22</span> (39% OFF).</p>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form mb-6">
-                    <input type="hidden" name="cmd" value="_xclick">
-                    <input type="hidden" name="business" value="fadamxyz@gmail.com">
-                    <input type="hidden" name="item_name" value="LED Digital Watch">
-                    <input type="hidden" name="amount" id="paypal-amount" value="26.22">
-                    <input type="hidden" name="currency_code" value="USD">
-                    <input type="hidden" name="return" value="https://nexco.com/thanks.html">
-                    <input type="hidden" name="cancel_return" value="https://nexco.com/thanks.html">
-                    <div class="mb-4">
-                        <label for="quantity" class="block text-sm font-medium mb-2">Quantity:</label>
-                        <input type="number" id="quantity" min="1" value="1" class="w-20 p-2 border rounded" aria-label="Quantity">
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium mb-2">Color:</label>
-                        <button type="button" class="variant-btn active" data-color="Black">Black</button>
-                    </div>
-                    <button type="submit" class="paypal-btn">🛒 Buy Now with PayPal - <span id="total-price">$26.22</span></button>
-                </form>
-                <p class="text-sm">🛡️ 30-Day Money-Back Guarantee</p>
+<body>
+  <header>
+    <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="logo" loading="lazy">
+    <span class="business-name">nexco</span>
+  </header>
+  <main>
+    <div class="container">
+      <!-- HERO SECTION -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-img-gallery" aria-label="Product gallery">
+          <img src="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg" alt="LED Digital Watch - main product image" loading="eager">
+        </div>
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title">Modern LED Digital Watch <span style="color:#1e90ff;">- 39% OFF</span></h1>
+          <div class="hero-desc">
+            Experience style and innovation with the LED Digital Watch. Crafted from premium titanium for lasting quality. Perfect for men and women ages 20-50.
+          </div>
+          <div class="timer-wrap" aria-label="Limited time offer">
+            <span class="timer-label">Limited Offer Ends In:</span>
+            <span class="timer" id="countdown">00:59:59</span>
+          </div>
+          <div class="urgency">Hurry! Only a few left in stock.</div>
+          <form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form" style="margin-top:1em;">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="fadamxyz@gmail.com">
+            <input type="hidden" name="item_name" value="LED Digital Watch">
+            <input type="hidden" name="amount" id="paypalAmount" value="26.22">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="return" value="https://nexco.com/thanks.html">
+            <input type="hidden" name="cancel_return" value="https://nexco.com/thanks.html">
+            <input type="hidden" name="on0" value="Color">
+            <input type="hidden" name="os0" id="paypalColor" value="Black">
+            <input type="hidden" name="on1" value="Size">
+            <input type="hidden" name="os1" id="paypalSize" value="22cm Strap">
+            <input type="hidden" name="quantity" id="paypalQty" value="1">
+            <div class="variants" aria-label="Product options">
+              <div class="variant-group">
+                <label for="colorSelect" class="variant-label">Color</label>
+                <select id="colorSelect" class="variant-select" aria-label="Select color">
+                  <option value="Black" selected>Black</option>
+                </select>
+              </div>
+              <div class="variant-group">
+                <label for="sizeSelect" class="variant-label">Strap Length</label>
+                <select id="sizeSelect" class="variant-select" aria-label="Select size">
+                  <option value="22cm Strap" selected>22cm</option>
+                </select>
+              </div>
+              <div class="variant-group">
+                <label for="qtyInput" class="variant-label">Qty</label>
+                <input type="number" min="1" max="10" value="1" class="qty-input" id="qtyInput" aria-label="Quantity">
+              </div>
+              <div class="variant-group">
+                <span class="variant-label">Price</span>
+                <span id="dynamicPrice" style="font-weight:700;font-size:1.15em;color:#e67e22;">$26.22</span>
+              </div>
             </div>
-            <div class="md:w-1/2 mt-8 md:mt-0">
-                <img src="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg" alt="LED Digital Watch" class="rounded-lg shadow-lg">
-            </div>
+            <button type="submit" class="paypal-btn" aria-label="Buy now with PayPal">
+              <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" style="height:22px;vertical-align:bottom;">
+              Buy Now with PayPal - $26.22
+            </button>
+          </form>
+          <div class="trust-badges" aria-label="Trust badges">
+            <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Money-back Guarantee" title="30-Day Money-back Guarantee">
+            <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="Secure Payment" title="100% Secure Payment">
+            <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="Fast Shipping" title="Fast Shipping">
+          </div>
         </div>
-    </section>
-
-    <!-- Countdown Timer -->
-    <section class="bg-yellow-400 text-center py-4">
-        <div class="container mx-auto px-4">
-            <p class="text-lg font-bold">Limited Time Offer! Sale Ends In:</p>
-            <div id="countdown" class="countdown text-2xl font-mono"></div>
+      </section>
+      <!-- PRODUCT SHOWCASE -->
+      <section class="product-showcase" aria-labelledby="product-details-title">
+        <div class="showcase-imgs" aria-label="Additional product images">
+          <img src="https://cdn.fastcdnshop.com/image/28b84dd4514716ac4bfa5836a3ef305b3a6537fe-700.jpeg" alt="LED Watch Side View" loading="lazy">
+          <img src="https://cdn.fastcdnshop.com/image/31a6ad767be49eb56fc9e56910b5e1581d58ad3d-600.jpeg" alt="LED Watch Display" loading="lazy">
+          <img src="https://cdn.fastcdnshop.com/image/d837f029493ca086100097235ebd2dad1f3730e8-600.jpeg" alt="LED Watch Features" loading="lazy">
+          <img src="https://cdn.fastcdnshop.com/image/508eda4e8f42c546d56b80c461d57aa44e93f6d9-600.jpeg" alt="LED Watch Packaging" loading="lazy">
+          <img src="https://cdn.fastcdnshop.com/image/e7125fa014aa420a97bedf6977b6f4022fb006aa.jpeg" alt="LED Watch on Wrist" loading="lazy">
         </div>
-    </section>
-
-    <!-- Product Showcase -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Why Choose the LED Digital Watch?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-2">Premium Titanium</h3>
-                    <p>Built with quality titanium for durability and a sleek look.</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-2">LED Display</h3>
-                    <p>Modern LED features display time and date with clarity.</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-2">Unisex Design</h3>
-                    <p>Perfect for anyone aged 20-50 with a stylish, versatile design.</p>
-                </div>
-            </div>
+        <div class="showcase-features">
+          <h2 id="product-details-title" style="font-size:1.3em;font-weight:700;color:#185fa3;">LED Digital Watch - Features & Specs</h2>
+          <ul class="feature-list">
+            <li>Modern, minimalist titanium design</li>
+            <li>Displays time & date in bright LED</li>
+            <li>Unisex, fits most wrists (strap: 22cm)</li>
+            <li>Perfect for daily wear, work, and sports</li>
+            <li>Easy, secure PayPal checkout</li>
+            <li>US-based shipping & support</li>
+          </ul>
+          <table class="spec-table" aria-label="Product specifications">
+            <tr><th>Category</th><td>Fashion</td></tr>
+            <tr><th>Material</th><td>Quality Titanium</td></tr>
+            <tr><th>Color</th><td>Black</td></tr>
+            <tr><th>Strap Length</th><td>22cm</td></tr>
+            <tr><th>Clock Diameter</th><td>4cm</td></tr>
+            <tr><th>Functions</th><td>Time & Date Display</td></tr>
+            <tr><th>Package</th><td>1x LED Digital Watch</td></tr>
+          </table>
+          <div class="showcase-video" style="margin-top:1.1em;">
+            <img src="https://sc04.alicdn.com/kf/Hf8b2185f7b714d778745f318e03126d0H/247563743/Hf8b2185f7b714d778745f318e03126d0H.jpg" alt="Watch Demo" style="max-width:140px;border-radius:8px;margin-right:0.5em;">
+            <img src="https://sc04.alicdn.com/kf/H28c891f50b3645709476e14262eb1ec3f/247563743/H28c891f50b3645709476e14262eb1ec3f.jpg" alt="Watch Demo 2" style="max-width:140px;border-radius:8px;margin-right:0.5em;">
+            <img src="https://sc04.alicdn.com/kf/H2cdf398d2e9d4fd1bf63ea4bf2757f25t/247563743/H2cdf398d2e9d4fd1bf63ea4bf2757f25t.jpg" alt="Watch Demo 3" style="max-width:140px;border-radius:8px;">
+          </div>
         </div>
-    </section>
-
-    <!-- Image Gallery -->
-    <section class="bg-gray-200 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Explore the LED Digital Watch</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="https://cdn.fastcdnshop.com/image/28b84dd4514716ac4bfa5836a3ef305b3a6537fe-700.jpeg" alt="Watch Image 1" class="gallery-img rounded-lg shadow">
-                <img src="https://cdn.fastcdnshop.com/image/31a6ad767be49eb56fc9e56910b5e1581d58ad3d-600.jpeg" alt="Watch Image 2" class="gallery-img rounded-lg shadow">
-                <img src="https://cdn.fastcdnshop.com/image/d837f029493ca086100097235ebd2dad1f3730e8-600.jpeg" alt="Watch Image 3" class="gallery-img rounded-lg shadow">
-                <img src="https://cdn.fastcdnshop.com/image/508eda4e8f42c546d56b80c461d57aa44e93f6d9-600.jpeg" alt="Watch Image 4" class="gallery-img rounded-lg shadow">
-            </div>
+      </section>
+      <!-- SOCIAL PROOF -->
+      <section class="social-proof" aria-label="Customer testimonials and reviews">
+        <div class="testimonials">
+          <div class="testimonials-title">What Our Customers Say</div>
+          <div class="testimonial">
+            <div class="testimonial-msg">"Absolutely love this watch! Modern, stylish and feels premium. Shipping was fast and PayPal made checkout easy."</div>
+            <div class="testimonial-author">- Jessica T., New York</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-msg">"Bought one for myself and my brother. Great value for the price, and looks way more expensive than it is."</div>
+            <div class="testimonial-author">- Marcus R., California</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <p class="italic">"This watch is sleek and functional. I get compliments all the time!"</p>
-                    <p class="mt-4 font-semibold">- Sarah T., New York</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <p class="italic">"The LED display is so clear, and the titanium feels premium."</p>
-                    <p class="mt-4 font-semibold">- James R., California</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <p class="italic">"Perfect for daily wear. Love the minimalist design!"</p>
-                    <p class="mt-4 font-semibold">- Emily K., Texas</p>
-                </div>
-            </div>
+        <div class="reviews">
+          <div class="reviews-title">Recent Reviews</div>
+          <div class="review">
+            <span class="review-msg">"Super comfortable and the LED is really bright. Recommend for anyone looking for a modern watch."</span>
+            <div class="review-author">Ava L. • ★★★★★</div>
+          </div>
+          <div class="review">
+            <span class="review-msg">"Really happy with my purchase. Strap fits perfectly and the titanium feels solid."</span>
+            <div class="review-author">Daniel P. • ★★★★★</div>
+          </div>
         </div>
-    </section>
+      </section>
+      <div class="trust-signal-row" aria-label="Trust signals">
+        <span class="trust-signal">30-Day Money-back Guarantee</span>
+        <span class="trust-signal">Secure PayPal Checkout</span>
+        <span class="trust-signal">Privacy Protected</span>
+        <span class="trust-signal">US-Focused Support</span>
+      </div>
+      <!-- FAQ SECTION -->
+      <section class="faq-section" aria-label="Frequently Asked Questions">
+        <div class="faq-title">Frequently Asked Questions</div>
+        <ul class="faq-list">
+          <li>
+            <div class="faq-q" tabindex="0">Is the watch unisex?</div>
+            <div class="faq-a">Yes, the LED Digital Watch is designed for both men and women (fits most wrists 20-50 years old).</div>
+          </li>
+          <li>
+            <div class="faq-q" tabindex="0">What is the warranty and return policy?</div>
+            <div class="faq-a">We offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund.</div>
+          </li>
+          <li>
+            <div class="faq-q" tabindex="0">How do I pay?</div>
+            <div class="faq-a">We accept PayPal for secure, fast payments. No PayPal account required.</div>
+          </li>
+          <li>
+            <div class="faq-q" tabindex="0">How long does shipping take?</div>
+            <div class="faq-a">Orders ship within 1 business day. US delivery typically in 3-7 days.</div>
+          </li>
+          <li>
+            <div class="faq-q" tabindex="0">Is the strap adjustable?</div>
+            <div class="faq-a">Yes, the 22cm strap fits most wrists and is easily adjustable.</div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy; 2025 nexco &mdash; Professional business providing quality products/services
+    </div>
+    <div class="footer-links">
+      <a href="mailto:fadamxyz@gmail.com">Contact</a>
+      <a href="https://nexco.com/thanks.html">Order Status</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Refund Policy</a>
+    </div>
+    <div>
+      Powered by <a href="https://www.paypal.com/" target="_blank" rel="noopener">PayPal</a>
+    </div>
+  </footer>
+  <script>
+    // Countdown Timer
+    function startCountdown(duration, display) {
+      let timer = duration, minutes, seconds;
+      setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        display.textContent =
+          (minutes < 10 ? '0' : '') + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+        if (--timer < 0) timer = duration;
+      }, 1000);
+    }
+    window.addEventListener('DOMContentLoaded', function() {
+      // 1 hour timer
+      var oneHour = 59 * 60 + 59,
+          display = document.querySelector('#countdown');
+      if(display) startCountdown(oneHour, display);
 
-    <!-- Pricing Section -->
-    <section class="bg-blue-100 py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Get Yours Now!</h2>
-            <p class="text-lg mb-6">Only <span class="font-bold">$26.22</span> (39% OFF from $42.99)</p>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
-                <input type="hidden" name="cmd" value="_xclick">
-                <input type="hidden" name="business" value="fadamxyz@gmail.com">
-                <input type="hidden" name="item_name" value="LED Digital Watch">
-                <input type="hidden" name="amount" id="paypal-amount-footer" value="26.22">
-                <input type="hidden" name="currency_code" value="USD">
-                <input type="hidden" name="return" value="https://nexco.com/thanks.html">
-                <input type="hidden" name="cancel_return" value="https://nexco.com/thanks.html">
-                <div class="mb-4">
-                    <label for="quantity-footer" class="block text-sm font-medium mb-2">Quantity:</label>
-                    <input type="number" id="quantity-footer" min="1" value="1" class="w-20 p-2 border rounded" aria-label="Quantity">
-                </div>
-                <button type="submit" class="paypal-btn">🛒 Buy Now with PayPal - <span id="total-price-footer">$26.22</span></button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="text-lg font-semibold">What is the watch made of?</h3>
-                    <p>The LED Digital Watch is crafted from quality titanium for durability and style.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold">What are the dimensions?</h3>
-                    <p>Strap length: 22cm, Clock diameter: 4cm.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold">Is there a warranty?</h3>
-                    <p>Yes, we offer a 30-day money-back guarantee.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold">Who is this watch for?</h3>
-                    <p>Unisex design, ideal for ages 20-50.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="Nexco Logo" class="h-12 mx-auto mb-4">
-            <p class="mb-4">Nexco - Professional business providing quality products and services.</p>
-            <p class="mb-4">Contact: <a href="mailto:support@nexco.com" class="underline">support@nexco.com</a></p>
-            <div class="flex justify-center space-x-4">
-                <img src="https://img.shields.io/badge/Secure-PayPal-blue" alt="PayPal Secure" class="trust-badge">
-                <img src="https://img.shields.io/badge/30_Day-Guarantee-green" alt="30 Day Guarantee" class="trust-badge">
-            </div>
-            <p class="mt-4 text-sm">© 2025 Nexco. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Countdown Timer
-        function startCountdown() {
-            const endDate = new Date();
-            endDate.setHours(endDate.getHours() + 24);
-            const timer = setInterval(() => {
-                const now = new Date().getTime();
-                const distance = endDate - now;
-                if (distance < 0) {
-                    clearInterval(timer);
-                    document.getElementById('countdown').innerHTML = "Offer Expired!";
-                    return;
-                }
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                document.getElementById('countdown').innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-            }, 1000);
-        }
-        startCountdown();
-
-        // Quantity and Price Update
-        function updatePrice(quantityInputId, totalPriceId, paypalAmountId) {
-            const quantityInput = document.getElementById(quantityInputId);
-            const totalPriceElement = document.getElementById(totalPriceId);
-            const paypalAmountInput = document.getElementById(paypalAmountId);
-            const basePrice = 26.22;
-
-            quantityInput.addEventListener('input', () => {
-                const quantity = parseInt(quantityInput.value) || 1;
-                const totalPrice = (basePrice * quantity).toFixed(2);
-                totalPriceElement.textContent = `$${totalPrice}`;
-                paypalAmountInput.value = totalPrice;
-            });
-        }
-        updatePrice('quantity', 'total-price', 'paypal-amount');
-        updatePrice('quantity-footer', 'total-price-footer', 'paypal-amount-footer');
-
-        // Variant Selection
-        document.querySelectorAll('.variant-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                document.querySelectorAll('.variant-btn').forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-            });
+      // FAQ open/close
+      document.querySelectorAll('.faq-q').forEach(function(q) {
+        q.addEventListener('click', function() {
+          let open = q.classList.toggle('open');
+          let a = q.nextElementSibling;
+          document.querySelectorAll('.faq-q').forEach(function(otherQ){
+            if(otherQ!==q) otherQ.classList.remove('open');
+            if(otherQ.nextElementSibling!==a) otherQ.nextElementSibling.style.display='none';
+          });
+          if(open) a.style.display='block'; else a.style.display='none';
         });
-    </script>
+        q.addEventListener('keypress', function(e) {
+          if(e.key==='Enter'||e.key===' ') q.click();
+        });
+      });
+
+      // Variant/quantity -> price, PayPal sync
+      const colorSelect = document.getElementById('colorSelect');
+      const sizeSelect = document.getElementById('sizeSelect');
+      const qtyInput = document.getElementById('qtyInput');
+      const dynamicPrice = document.getElementById('dynamicPrice');
+      const basePrice = 26.22;
+
+      function updatePriceAndPaypal() {
+        let qty = Math.max(1, parseInt(qtyInput.value,10)||1);
+        let price = (basePrice * qty).toFixed(2);
+        dynamicPrice.textContent = `$${price}`;
+        document.getElementById('paypalAmount').value = price;
+        document.getElementById('paypalColor').value = colorSelect.value;
+        document.getElementById('paypalSize').value = sizeSelect.value;
+        document.getElementById('paypalQty').value = qty;
+      }
+
+      colorSelect.onchange = updatePriceAndPaypal;
+      sizeSelect.onchange = updatePriceAndPaypal;
+      qtyInput.oninput = updatePriceAndPaypal;
+
+      // Express Checkout (PayPal Smart Button)
+      if(window.paypal){
+        paypal.Buttons({
+          style: { layout: 'horizontal', color: 'blue', shape: 'rect', label: 'paypal' },
+          createOrder: function(data, actions) {
+            let qty = Math.max(1, parseInt(qtyInput.value,10)||1);
+            return actions.order.create({
+              purchase_units: [{
+                description: "LED Digital Watch",
+                amount: { value: (basePrice*qty).toFixed(2), currency_code: "USD" }
+              }]
+            });
+          },
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+              window.location.href = "https://nexco.com/thanks.html";
+            });
+          },
+          onCancel: function(data) {
+            window.location.href = "https://nexco.com/thanks.html";
+          },
+          onError: function(err) {
+            alert("Payment Error: " + err);
+          }
+        }).render('.paypal-form');
+      }
+
+      // Conversion tracking (template - replace with your analytics)
+      window.dataLayer = window.dataLayer || [];
+      document.getElementById('paypalForm').addEventListener('submit', function() {
+        window.dataLayer.push({
+          event: 'purchase_initiated',
+          product: 'LED Digital Watch',
+          value: document.getElementById('paypalAmount').value,
+          currency: 'USD'
+        });
+      });
+    });
+  </script>
+  <!-- PayPal checkout JS (Express) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" async></script>
+</body>
+</html>
