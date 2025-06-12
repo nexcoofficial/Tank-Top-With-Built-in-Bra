@@ -2,630 +2,733 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="LED Digital Watch - Modern design, professional landing page, seamless PayPal integration. Buy premium watches with security and style.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LED Digital Watch | nexco</title>
-    <meta name="keywords" content="LED Digital Watch, nexco, fashion, PayPal, buy now, modern watch, digital watch">
-    <meta name="author" content="nexco">
-    <link rel="icon" href="https://cdn.orderonline.id/uploads/images_4147541749587339195.png">
-
-    <style>
-        /* ---- GLOBAL RESET & BASE ---- */
-        :root {
-            --primary: #181b19;
-            --accent: #e8b972;
-            --earth1: #262421;
-            --earth2: #62523b;
-            --earth3: #b8ac88;
-            --earth4: #a17947;
-            --cta: #e5a442;
-            --success: #1fb37b;
-            --danger: #e74c3c;
-            --radius: 14px;
-            --shadow: 0 8px 32px rgba(24,27,25,0.08);
-            --font-main: 'Montserrat', Arial, Helvetica, sans-serif;
-            --font-head: 'Poppins', Arial, Helvetica, sans-serif;
+    <meta name="description" content="Discover the premium LED Digital Watch from nexco - sleek design, modern features, and unbeatable price.">
+    <meta name="keywords" content="LED watch, digital watch, modern watch, fashion watch, premium watch">
+    <title>LED Digital Watch | Premium Timepiece by nexco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        dark: '#0f172a',
+                        light: '#f1f5f9'
+                    },
+                    fontFamily: {
+                        heading: ['Raleway', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
         }
-        * { margin:0; padding:0; box-sizing: border-box; }
-        html, body { height: 100%; }
-        body {
-            font-family: var(--font-main);
-            background: linear-gradient(120deg, var(--earth1) 0%, var(--earth3) 100%);
-            color: #222;
-            min-height: 100vh;
-            line-height: 1.6;
-            scroll-behavior: smooth;
+    </script>
+    <style type="text/css">
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
         }
-        a { color: var(--accent); text-decoration: none; }
-        h1, h2, h3, h4, h5 {
-            font-family: var(--font-head);
-            font-weight: 700;
-            color: var(--primary);
+        .gallery-main {
+            background-color: #f9fafb;
         }
-        img { max-width: 100%; display: block; }
-        button, .btn {
-            background: var(--cta);
-            color: #fff;
-            border: none;
-            padding: 12px 28px;
-            border-radius: var(--radius);
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background .18s, transform .13s;
-            box-shadow: var(--shadow);
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff, #f0f7ff);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
         }
-        button:hover, .btn:hover { background: var(--earth2); transform: translateY(-2px) scale(1.04);}
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.2rem;
+        .timer-item {
+            background: linear-gradient(to bottom, #2563eb, #1d4ed8);
+            color: white;
         }
-        .split {
-            display: flex;
-            flex-direction: row;
-            min-height: 100vh;
-            gap: 0;
+        .watch-shadow {
+            filter: drop-shadow(0 20px 30px rgba(37, 99, 235, 0.2));
         }
-        .split-col {
-            flex: 1 1 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 3rem 2rem;
-        }
-        .hero-bg {
-            background: linear-gradient(180deg, var(--earth1) 0%, var(--earth2) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        /* ---- HERO ---- */
-        .hero-logo {
-            height: 56px;
-            margin-bottom: 1.1rem;
-        }
-        .hero-title {
-            font-size: 2.5rem;
-            color: #fff;
-            margin-bottom: 1.2rem;
-        }
-        .hero-desc {
-            color: #e6e7e9;
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            font-weight: 400;
-        }
-        .hero-cta {
-            background: var(--cta);
-            color: #fff;
-            font-size: 1.35rem;
-            padding: 1rem 2.5rem;
-            margin: 1.4rem 0 0 0;
-        }
-        .product-img-main {
-            box-shadow: 0 8px 36px rgba(0,0,0,0.22);
-            border-radius: var(--radius);
-            width: 380px;
-            margin: 0 auto 1.5rem auto;
-            border: 4px solid var(--earth2);
-        }
-        .hero-badges {
-            display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;
-        }
-        .badge {
-            background: #fff3c2;
-            color: #a17947;
-            font-weight: 700;
-            border-radius: 99px;
-            font-size: 1rem;
-            padding: .4rem 1.2rem;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-            display: flex; align-items: center; gap: .35rem;
-        }
-        /* ---- GALLERY ---- */
-        .gallery-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-        .gallery-img {
-            flex: 1 0 130px;
-            min-width: 130px;
-            max-width: 180px;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 12px;
-            border: 2px solid #e8e0d0;
-            box-shadow: 0 2px 18px rgba(0,0,0,0.07);
-            transition: transform .16s;
-            cursor: pointer;
-        }
-        .gallery-img:hover { transform: scale(1.07);}
-        /* ---- FEATURES ---- */
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin: 2.2rem 0;
-        }
-        .feature-block {
-            flex: 1 1 180px;
-            min-width: 180px;
-            background: #fff;
-            padding: 1.4rem 1.1rem;
-            border-radius: var(--radius);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.07);
-            margin-bottom: 1rem;
-        }
-        .feature-block h4 {
-            color: var(--earth2);
-            margin: .7rem 0 .2rem 0;
-            font-size: 1.17rem;
-        }
-        /* ---- PRODUCT VARIANTS ---- */
-        .variants-row {
-            display: flex;
-            gap: 1.1rem;
-            margin-bottom: 1.2rem;
-            flex-wrap: wrap;
-        }
-        .variant-btn {
-            background: #222;
-            color: #fff;
-            border: 2px solid #444;
-            border-radius: 10px;
-            padding: .7rem 1.5rem;
-            font-size: 1.07rem;
-            cursor: pointer;
-            transition: border .16s, background .13s, color .13s;
-        }
-        .variant-btn.selected, .variant-btn:active {
-            background: var(--cta);
-            color: #fff;
-            border: 2px solid var(--earth2);
-        }
-        /* ---- QUANTITY SELECT ---- */
-        .qty-group {
-            display: flex; align-items: center; gap: .4rem; margin-bottom: 1.5rem;
-        }
-        .qty-btn {
-            background: #eee;
-            color: #444;
-            font-size: 1.3rem;
-            height: 38px; width: 38px;
-            border-radius: 10px;
-            border: none;
-        }
-        .qty-inp {
-            width: 50px; text-align: center;
-            font-size: 1.2rem; border-radius: 7px;
-            border: 1.5px solid #bbb;
-            padding: .5rem;
-            margin: 0 .5rem;
-        }
-        /* ---- PRICING ---- */
-        .pricing-row {
-            display: flex; align-items: flex-end; gap: 1.2rem;
-            margin-bottom: 1.7rem;
-        }
-        .price {
-            font-size: 2.2rem; font-weight: 800; color: var(--cta);
-        }
-        .price-old {
-            font-size: 1.17rem; text-decoration: line-through; color: #999; margin-left: .5rem;
-        }
-        .price-off {
-            color: var(--success); font-weight: 700; font-size: 1.1rem;
-            margin-left: .5rem;
-        }
-        /* ---- PAYPAL ---- */
-        .paypal-form {
-            margin-top: .5rem;
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
         }
         .paypal-btn {
-            background: #003087;
-            color: #fff;
-            font-size: 1.15rem;
-            font-weight: 700;
-            padding: 1rem 1.7rem;
-            border-radius: var(--radius);
-            border: none;
-            display: flex; align-items: center; justify-content: center;
-            gap: .6rem;
-            width: 100%;
-            margin-top: .5rem;
-            transition: background .16s;
-        }
-        .paypal-btn:hover { background: #005ea6;}
-        /* ---- TRUST SIGNALS ---- */
-        .trust-row {
-            display: flex; gap: 1.1rem; flex-wrap: wrap; margin: 1.3rem 0;
-            align-items: center;
-        }
-        .trust-badge {
-            background: #fff;
-            color: var(--success);
-            font-weight: 600;
-            border-radius: 7px;
-            font-size: .97rem;
-            padding: .45rem 1.1rem;
-            box-shadow: 0 1px 8px rgba(0,0,0,0.04);
-            display: flex; align-items: center; gap: .5rem;
-        }
-        /* ---- COUNTDOWN ---- */
-        .countdown {
-            background: #fffbe2;
+            background: linear-gradient(to bottom, #FFC439, #F2B01E);
+            background-color: #FFC439;
+            border-radius: 4px;
             display: inline-block;
-            padding: .7rem 1.7rem;
-            border-radius: 12px;
-            color: var(--danger);
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: .04em;
-            margin: 1.2rem 0;
-        }
-        /* ---- TESTIMONIALS & REVIEWS ---- */
-        .testimonials {
-            background: #fff;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            margin: 2rem 0 2.5rem 0;
-            padding: 2.2rem 1.5rem 1.5rem 1.5rem;
-        }
-        .testimonial-row {
-            display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 1.8rem;
-        }
-        .testimonial {
-            flex: 1 1 220px;
-            min-width: 220px;
-            background: #f7f6f2;
-            border-radius: 10px;
-            padding: 1.3rem 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        .testimonial img {
-            width: 36px; height: 36px; border-radius: 50%;
-            margin-right: .7rem;
-            vertical-align: middle;
-        }
-        .testimonial .stars {
-            color: #f4b400;
-            font-size: 1rem;
-            margin-bottom: .2rem;
-        }
-        .testimonial-author {
-            font-size: .98rem;
-            color: var(--earth2);
-            margin-top: .5rem;
-        }
-        /* ---- FAQ ---- */
-        .faq-section {
-            margin: 2.5rem 0 1.7rem 0;
-        }
-        .faq-title {
-            font-size: 2rem; color: var(--primary); margin-bottom: 1.2rem;
-        }
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background: #fff;
-            border-radius: 8px;
-            margin: .7rem 0;
-            box-shadow: 0 1px 8px rgba(0,0,0,0.03);
-            padding: 1rem 1.1rem;
             cursor: pointer;
-            transition: box-shadow .13s;
+            color: #111;
+            font-weight: 600;
+            padding: 15px 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
-        .faq-q {
-            font-weight: 700;
-            color: var(--earth2);
+        .paypal-btn:hover {
+            background: linear-gradient(to bottom, #F2B01E, #E5A217);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
-        .faq-a {
-            display: none;
-            margin-top: .6rem;
-            color: var(--earth2);
-            font-size: 1rem;
-        }
-        .faq-item.open { box-shadow: 0 3px 16px rgba(0,0,0,0.06);}
-        .faq-item.open .faq-a { display: block;}
-        /* ---- FOOTER ---- */
-        footer {
-            background: var(--earth2);
-            color: #fff;
-            padding: 2.2rem 1rem 1rem 1rem;
-            text-align: center;
-            border-top-left-radius: 24px;
-            border-top-right-radius: 24px;
-        }
-        .footer-logo {
-            height: 38px; margin-bottom: .7rem;
-        }
-        .footer-links {
-            margin: 1.2rem 0;
-        }
-        .footer-link {
-            color: #ffe;
-            margin: 0 .75rem;
-            font-size: 1rem;
-        }
-        /* ---- RESPONSIVE ---- */
-        @media (max-width: 950px) {
-            .split { flex-direction: column; }
-            .split-col { padding: 2rem 1rem;}
-            .product-img-main { width: 94vw; max-width: 400px;}
-            .gallery-row { gap: .7rem;}
-        }
-        @media (max-width: 600px) {
-            .hero-title { font-size: 1.5rem;}
-            .product-img-main { width: 98vw; }
-            .feature-block { min-width: 140px; padding: 1rem .5rem;}
-            .gallery-img { min-width:80px; max-width:110px;}
+        .paypal-btn:active {
+            transform: translateY(0);
         }
     </style>
-    <!-- Google Fonts preload -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- SPLIT HERO SECTION -->
-    <div class="split">
-        <!-- LEFT: HERO & PRODUCT -->
-        <div class="split-col hero-bg">
-            <div style="width:100%;max-width: 470px;text-align: center;">
-                <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="hero-logo" loading="lazy">
-                <div class="hero-title">LED Digital Watch</div>
-                <div class="hero-desc">
-                    A digital watch with a modern design and stylish LED features. Perfect for your everyday style.<br>
-                    <span style="font-size:1.07rem; color:var(--accent);font-weight:600;">Unisex • Premium Titanium • 22cm Strap • 4cm Dial</span>
+<body class="font-body bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="h-12">
+                    <span class="ml-2 text-xl font-heading font-bold text-primary">nexco</span>
                 </div>
-                <img src="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg" alt="LED Digital Watch" class="product-img-main" loading="eager">
-                <div class="hero-badges">
-                    <span class="badge"><svg width="19" height="19" style="vertical-align:middle;" fill="none"><circle cx="9.5" cy="9.5" r="9" stroke="#e8b972" stroke-width="2"/><path d="M5.5 10l2.5 2.5L14 7" stroke="#78c19c" stroke-width="2" stroke-linecap="round"/></svg> Money-back Guarantee</span>
-                    <span class="badge"><svg width="20" height="19" fill="none" style="vertical-align:middle;"><rect x="2" y="5" width="16" height="10" rx="2" stroke="#e8b972" stroke-width="2"/><path d="M2 7h16" stroke="#e8b972" stroke-width="2"/></svg> Secure Payment</span>
-                </div>
-                <div class="countdown" id="countdown-timer">Special Offer Ends In <span id="countdown"></span></div>
-            </div>
-        </div>
-        <!-- RIGHT: PRODUCT & CHECKOUT -->
-        <div class="split-col" style="background:#fff;">
-            <div class="container">
-                <!-- PRODUCT GALLERY -->
-                <div style="margin-bottom:1.7rem;">
-                    <div class="gallery-row" id="gallery">
-                        <img src="https://cdn.fastcdnshop.com/image/28b84dd4514716ac4bfa5836a3ef305b3a6537fe-700.jpeg" class="gallery-img" alt="watch 2" loading="lazy">
-                        <img src="https://cdn.fastcdnshop.com/image/31a6ad767be49eb56fc9e56910b5e1581d58ad3d-600.jpeg" class="gallery-img" alt="watch 3" loading="lazy">
-                        <img src="https://cdn.fastcdnshop.com/image/d837f029493ca086100097235ebd2dad1f3730e8-600.jpeg" class="gallery-img" alt="watch 4" loading="lazy">
-                        <img src="https://cdn.fastcdnshop.com/image/508eda4e8f42c546d56b80c461d57aa44e93f6d9-600.jpeg" class="gallery-img" alt="watch 5" loading="lazy">
-                        <img src="https://cdn.fastcdnshop.com/image/e7125fa014aa420a97bedf6977b6f4022fb006aa.jpeg" class="gallery-img" alt="watch 6" loading="lazy">
-                    </div>
-                    <div style="margin:1rem 0;">
-                        <img src="https://sc04.alicdn.com/kf/Hf8b2185f7b714d778745f318e03126d0H/247563743/Hf8b2185f7b714d778745f318e03126d0H.jpg" class="gallery-img" alt="watch demo" loading="lazy">
-                    </div>
-                </div>
-                <!-- PRODUCT VARIANTS -->
-                <form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form" autocomplete="off">
-                    <input type="hidden" name="cmd" value="_xclick">
-                    <input type="hidden" name="business" value="fadamxyz@gmail.com">
-                    <input type="hidden" name="item_name" value="LED Digital Watch">
-                    <input type="hidden" name="amount" value="99.00">
-                    <input type="hidden" name="currency_code" value="USD">
-                    <input type="hidden" name="return" value="https://nexco.com/thanks.html">
-                    <input type="hidden" name="cancel_return" value="https://nexco.com/thanks.html">
-                    <!-- Custom fields -->
-                    <input type="hidden" name="on0" value="Color">
-                    <input type="hidden" name="os0" id="paypalColor" value="Black">
-                    <input type="hidden" name="on1" value="Strap Length">
-                    <input type="hidden" name="os1" id="paypalStrap" value="22cm">
-                    <input type="hidden" name="on2" value="Clock Diameter">
-                    <input type="hidden" name="os2" id="paypalDiameter" value="4cm">
-                    <input type="hidden" name="on3" value="Material">
-                    <input type="hidden" name="os3" id="paypalMaterial" value="Quality Titanium">
-                    <input type="hidden" name="quantity" id="paypalQty" value="1">
-                    <!-- VARIANT SELECT -->
-                    <div style="margin-bottom:1.1rem;">
-                        <div style="font-weight:700; font-size:1.05rem; color:var(--earth2); margin-bottom:.4rem;">Color:</div>
-                        <div class="variants-row" id="colorVariants">
-                            <button type="button" class="variant-btn selected" data-value="Black" aria-label="Black">Black</button>
-                        </div>
-                    </div>
-                    <div class="variants-row" style="margin-bottom:.7rem;">
-                        <span class="variant-btn selected" style="cursor:default;">Strap: 22cm</span>
-                        <span class="variant-btn selected" style="cursor:default;">Diameter: 4cm</span>
-                        <span class="variant-btn selected" style="cursor:default;">Titanium</span>
-                    </div>
-                    <!-- QUANTITY SELECT -->
-                    <div class="qty-group">
-                        <button type="button" class="qty-btn" id="qty-minus" aria-label="Decrease quantity">-</button>
-                        <input type="text" class="qty-inp" id="qty-input" value="1" pattern="[0-9]*" inputmode="numeric" aria-label="Quantity">
-                        <button type="button" class="qty-btn" id="qty-plus" aria-label="Increase quantity">+</button>
-                    </div>
-                    <!-- PRICING -->
-                    <div class="pricing-row">
-                        <span class="price" id="currentPrice">$99.00</span>
-                        <span class="price-old">$79.99</span>
-                        <span class="price-off">19% OFF</span>
-                    </div>
-                    <button type="submit" class="paypal-btn" id="paypalBtn">
-                        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" width="28" height="28" style="margin-right:.4rem;"> Buy Now with PayPal - $99.00
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="font-medium hover:text-primary transition">Features</a>
+                    <a href="#gallery" class="font-medium hover:text-primary transition">Gallery</a>
+                    <a href="#reviews" class="font-medium hover:text-primary transition">Reviews</a>
+                    <a href="#pricing" class="font-medium hover:text-primary transition">Pricing</a>
+                </nav>
+                <div class="flex items-center space-x-2">
+                    <a href="#pricing" class="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-secondary transition">Order Now</a>
+                    <button class="md:hidden text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
                     </button>
-                </form>
-                <!-- TRUST & URGENCY -->
-                <div class="trust-row">
-                    <span class="trust-badge"><svg width="20" height="20" fill="none"><circle cx="10" cy="10" r="9" stroke="#1fb37b" stroke-width="2"/><path d="M6 10.5l3 3 5-5" stroke="#1fb37b" stroke-width="2"/></svg> 30-Day Money-Back</span>
-                    <span class="trust-badge"><svg width="20" height="20" fill="none"><rect x="3" y="7" width="14" height="8" rx="2" stroke="#e5a442" stroke-width="2"/><path d="M3 9h14" stroke="#e5a442" stroke-width="2"/></svg> Free US Shipping</span>
-                    <span class="trust-badge"><svg width="20" height="20" fill="none"><rect x="4" y="4" width="12" height="12" rx="6" stroke="#e5a442" stroke-width="2"/><path d="M10 7v3l2 2" stroke="#e5a442" stroke-width="2"/></svg> Secure Checkout</span>
                 </div>
-                <!-- FEATURES / BENEFITS -->
-                <div class="features">
-                    <div class="feature-block">
-                        <h4>Modern LED Display</h4>
-                        <div>Crisp, clear time and date display day or night.</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium">Limited Time Offer</span>
+                <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 leading-tight">
+                    Modern LED Watch for <br><span class="text-primary">Your Digital Lifestyle</span>
+                </h1>
+                <p class="mt-4 text-xl text-gray-600 max-w-xl">
+                    Premium titanium LED watch with crystal-clear display and luxury feel. Perfect for every occasion.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <div>
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-bold text-gray-900">$26.22</span>
+                            <span class="ml-2 text-lg text-gray-500 line-through">$15.99</span>
+                            <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">39% OFF</span>
+                        </div>
+                        <p class="text-gray-600 mt-1">Free shipping • 30-day money back</p>
                     </div>
-                    <div class="feature-block">
-                        <h4>Quality Titanium</h4>
-                        <div>Sleek, lightweight, and ultra-durable design.</div>
+                    <a href="#pricing" class="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-bold text-lg transform hover:-translate-y-1 transition duration-300 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-bolt mr-2"></i> Order Now
+                    </a>
+                </div>
+                <div class="mt-8 flex space-x-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <p class="ml-2 font-medium">4.9/5 Rating</p>
                     </div>
-                    <div class="feature-block">
-                        <h4>Universal Fit (22cm)</h4>
-                        <div>Comfortably fits most wrists - unisex, ages 20-50.</div>
-                    </div>
-                    <div class="feature-block">
-                        <h4>Water Resistant</h4>
-                        <div>Perfect for daily use, gym, and outdoor activities.</div>
-                    </div>
-                    <div class="feature-block">
-                        <h4>Easy Setup</h4>
-                        <div>Just wear and go - no app or complex settings.</div>
+                    <div class="flex items-center">
+                        <i class="fas fa-shipping-fast text-primary text-lg"></i>
+                        <p class="ml-2 font-medium">Free US Shipping</p>
                     </div>
                 </div>
-                <!-- SOCIAL PROOF / TESTIMONIALS -->
-                <div class="testimonials">
-                    <h2 style="text-align:center; color:var(--primary); font-size:1.5rem;margin-bottom:1.1rem;">What Customers Say</h2>
-                    <div class="testimonial-row">
-                        <div class="testimonial">
-                            <div class="stars">★★★★★</div>
-                            <div>"Absolutely love the design and comfort! Feels premium and fits all my outfits."</div>
-                            <div class="testimonial-author">— Sarah W.</div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="stars">★★★★★</div>
-                            <div>"Super fast shipping. PayPal checkout was seamless, and the watch is great value."</div>
-                            <div class="testimonial-author">— Mike T.</div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="stars">★★★★★</div>
-                            <div>"The LED is bright and clear, and the titanium build feels sturdy. Highly recommend!"</div>
-                            <div class="testimonial-author">— Jenna P.</div>
-                        </div>
-                    </div>
-                    <div style="text-align:center; font-size:.99rem; color:#888;">Rated 4.9/5 by <b>2,100+</b> US customers</div>
-                </div>
-                <!-- FAQ SECTION -->
-                <div class="faq-section">
-                    <div class="faq-title">Frequently Asked Questions</div>
-                    <div class="faq-list">
-                        <div class="faq-item">
-                            <div class="faq-q">Is the LED Digital Watch water resistant?</div>
-                            <div class="faq-a">Yes, it's designed to withstand daily splashes and rain, but is not suitable for deep water activities.</div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-q">How do I adjust the time on the watch?</div>
-                            <div class="faq-a">Simply use the side button to set the time. No app or tools required.</div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-q">Does it fit small/large wrists?</div>
-                            <div class="faq-a">With a 22cm strap, it's adjustable to fit most wrist sizes comfortably.</div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-q">Is this product covered by a warranty?</div>
-                            <div class="faq-a">Yes, every purchase comes with a 30-day money-back guarantee.</div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-q">How soon will I get my order?</div>
-                            <div class="faq-a">US orders ship within 1-2 business days and typically arrive in 3-5 business days.</div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-q">Can I pay with PayPal?</div>
-                            <div class="faq-a">Yes! PayPal is fully integrated for secure, fast checkout.</div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative watch-shadow">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary to-blue-400 rounded-full filter blur-2xl opacity-20 animate-pulse"></div>
+                    <img src="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg" alt="LED Digital Watch" class="relative w-full max-w-md object-contain">
+                    <div class="absolute -bottom-5 -right-5 bg-white px-4 py-3 rounded-full shadow-lg">
+                        <div class="flex items-center">
+                            <div class="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="ml-2 text-sm font-semibold">In Stock</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="footer-logo" loading="lazy">
-        <div style="font-size:1.15rem; font-weight:600; margin-bottom: .7rem;">nexco</div>
-        <div style="color:#ffe7b0; font-size:.98rem;">Professional business providing quality products and services</div>
-        <div class="footer-links">
-            <a href="#" class="footer-link">Privacy Policy</a> |
-            <a href="#" class="footer-link">Terms of Service</a> |
-            <a href="#" class="footer-link">Contact</a>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-primary font-semibold">TECHNOLOGY MEETS STYLE</span>
+                <h2 class="mt-2 text-3xl md:text-4xl font-heading font-bold">Advanced Features for Everyday Use</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Crafted with premium materials and packed with modern functionality
+                </p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-gradient-to-b from-blue-50 to-white rounded-xl border border-blue-100 hover:shadow-lg transition">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold">Ultra-Bright LED Display</h3>
+                    <p class="mt-2 text-gray-600">
+                        Crystal-clear time display visible in any lighting condition
+                    </p>
+                </div>
+                <div class="p-6 bg-gradient-to-b from-blue-50 to-white rounded-xl border border-blue-100 hover:shadow-lg transition">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold">Premium Titanium Case</h3>
+                    <p class="mt-2 text-gray-600">
+                        Lightweight yet durable construction for daily wear
+                    </p>
+                </div>
+                <div class="p-6 bg-gradient-to-b from-blue-50 to-white rounded-xl border border-blue-100 hover:shadow-lg transition">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-tint-slash text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold">Water Resistant</h3>
+                    <p class="mt-2 text-gray-600">
+                        5ATM water resistance protects against rain and splashes
+                    </p>
+                </div>
+                <div class="p-6 bg-gradient-to-b from-blue-50 to-white rounded-xl border border-blue-100 hover:shadow-lg transition">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-battery-full text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold">Long Battery Life</h3>
+                    <p class="mt-2 text-gray-600">
+                        Up to 6 months on a single replaceable battery
+                    </p>
+                </div>
+            </div>
         </div>
-        <div style="font-size:.97rem; margin-top:.6rem;">&copy; 2025 nexco. All rights reserved.</div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold">Premium Design & Craftsmanship</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Sleek, modern design that complements any outfit or occasion
+                </p>
+            </div>
+            <div class="mt-16 flex flex-col lg:flex-row gap-8">
+                <div class="w-full lg:w-1/2">
+                    <div class="gallery-main rounded-2xl overflow-hidden">
+                        <img src="https://cdn.fastcdnshop.com/image/31a6ad767be49eb56fc9e56910b5e1581d58ad3d-600.jpeg" alt="Watch main view" class="w-full h-auto object-cover rounded-2xl">
+                    </div>
+                    <div class="mt-6 image-gallery">
+                        <img src="https://cdn.fastcdnshop.com/image/28b84dd4514716ac4bfa5836a3ef305b3a6537fe-700.jpeg" alt="Watch side view" class="rounded-lg cursor-pointer hover:opacity-90 transition">
+                        <img src="https://cdn.fastcdnshop.com/image/508eda4e8f42c546d56b80c461d57aa44e93f6d9-600.jpeg" alt="Watch angle view" class="rounded-lg cursor-pointer hover:opacity-90 transition">
+                        <img src="https://cdn.fastcdnshop.com/image/e7125fa014aa420a97bedf6977b6f4022fb006aa.jpeg" alt="Watch wrist view" class="rounded-lg cursor-pointer hover:opacity-90 transition">
+                        <img src="https://cdn.fastcdnshop.com/image/d837f029493ca086100097235ebd2dad1f3730e8-600.jpeg" alt="Watch packaging" class="rounded-lg cursor-pointer hover:opacity-90 transition">
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h3 class="text-2xl font-semibold">Technical Specifications</h3>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Case Material</span>
+                            <span class="font-medium">Premium Titanium</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Band Material</span>
+                            <span class="font-medium">Silicone Rubber</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Display</span>
+                            <span class="font-medium">Ultra-Bright LED</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Water Resistance</span>
+                            <span class="font-medium">5 ATM (50 meters)</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Battery Life</span>
+                            <span class="font-medium">Approx. 6 months</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Case Diameter</span>
+                            <span class="font-medium">4 cm</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Strap Length</span>
+                            <span class="font-medium">22 cm (adjustable)</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="text-gray-600">Weight</span>
+                            <span class="font-medium">45g</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Warranty</span>
+                            <span class="font-medium">1 Year</span>
+                        </div>
+                    </div>
+                    <div class="mt-10 bg-blue-50 p-6 rounded-xl">
+                        <div class="flex items-start">
+                            <i class="fas fa-gift text-primary text-2xl mt-1"></i>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">Package Includes</h4>
+                                <p class="mt-2">
+                                    1x LED Digital Watch, instruction manual, and premium gift box
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold">Customer Stories</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Don't just take our word for it - hear from our satisfied customers
+                </p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center">
+                        <div class="text-amber-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-500">2 weeks ago</span>
+                    </div>
+                    <p class="mt-4 italic text-gray-700">
+                        "This watch is my daily companion. The LED display is incredibly crisp, and the titanium finish makes it feel luxurious. The battery has lasted 4 months already!"
+                    </p>
+                    <div class="mt-6 flex items-center">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Michael S.</h4>
+                            <p class="text-primary">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center">
+                        <div class="text-amber-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-500">3 weeks ago</span>
+                    </div>
+                    <p class="mt-4 italic text-gray-700">
+                        "I was skeptical about the price, but this watch exceeded my expectations. The strap is comfortable, the display is perfect even in sunlight, and it looks way more expensive than it is."
+                    </p>
+                    <div class="mt-6 flex items-center">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Jennifer T.</h4>
+                            <p class="text-primary">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center">
+                        <div class="text-amber-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="ml-2 text-gray-500">1 month ago</span>
+                    </div>
+                    <p class="mt-4 italic text-gray-700">
+                        "I've gotten so many compliments on this watch! The size is perfect for my wrist and the LED display has this cool retro-futuristic vibe. Highly recommend for the price."
+                    </p>
+                    <div class="mt-6 flex items-center">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">David P.</h4>
+                            <p class="text-primary">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold">Limited Time Special Offer</h2>
+                    <p class="mt-4 text-lg text-gray-700">
+                        Get our premium LED watch at an unbeatable price
+                    </p>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <div class="px-8 pt-10 pb-6">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <span class="text-primary font-semibold">SMART DEAL</span>
+                                        <h3 class="text-2xl font-bold mt-1">LED Digital Watch</h3>
+                                    </div>
+                                    <div class="bg-green-100 text-green-800 font-bold py-1 px-3 rounded-full text-sm">
+                                        MOST POPULAR
+                                    </div>
+                                </div>
+                                <div class="mt-8 flex items-baseline">
+                                    <span class="text-4xl font-bold text-gray-900">$26.22</span>
+                                    <span class="ml-2 text-lg text-gray-500 line-through">$15.99</span>
+                                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">39% OFF</span>
+                                </div>
+                                <p class="mt-2 text-gray-600">
+                                    Includes free shipping & premium gift packaging
+                                </p>
+                                
+                                <div class="mt-8">
+                                    <h4 class="font-bold">What's Included</h4>
+                                    <ul class="mt-4 space-y-3">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            LED Digital Watch with titanium case
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Premium silicone rubber band
+                                        </li>
+                                        <li class="fas fa-check-circle text-green-500 mr-2">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Instruction manual & warranty card
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Luxury gift box packaging
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Free US shipping
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-8">
+                                    <div class="flex items-center justify-between">
+                                        <label class="font-medium">Quantity:</label>
+                                        <div class="flex items-center border rounded-full px-4 py-2">
+                                            <button class="quantity-btn text-gray-400 hover:text-gray-800" data-action="decrement">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <span id="quantity" class="mx-4 font-semibold">1</span>
+                                            <button class="quantity-btn text-gray-400 hover:text-gray-800" data-action="increment">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-8 bg-blue-50 rounded-lg p-4">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span class="text-sm text-gray-600">Subtotal</span>
+                                            <p class="text-xl font-bold" id="subtotal">$26.22</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="text-sm text-gray-600">Free Shipping</span>
+                                            <p class="text-xl font-bold text-green-600">$0.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 pt-4 border-t border-gray-200 flex justify-between items-center">
+                                        <div>
+                                            <span class="font-medium">Total</span>
+                                            <p class="text-2xl font-bold" id="total-price">$26.22</p>
+                                        </div>
+                                        <div class="text-xs text-gray-500">
+                                            USD - U.S. Dollars
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden h-full">
+                            <div class="px-8 pt-10 pb-8">
+                                <h3 class="text-2xl font-bold mb-6">Secure Checkout</h3>
+                                
+                                <div class="mb-8">
+                                    <h4 class="font-bold text-lg mb-4">Choose Payment Method</h4>
+                                    <div class="space-y-4">
+                                        <!-- PayPal Button -->
+                                        <div class="pt-4">
+                                            <div id="paypal-button-container" class="mt-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 rounded-lg p-5">
+                                    <h4 class="font-semibold mb-4 flex items-center">
+                                        <i class="fas fa-shield-alt text-primary mr-2"></i> Shop with Confidence
+                                    </h4>
+                                    <ul class="space-y-2">
+                                        <li class="flex">
+                                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                            <span>Secure payment with PayPal encryption</span>
+                                        </li>
+                                        <li class="flex">
+                                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                            <span>30-day money-back guarantee</span>
+                                        </li>
+                                        <li class="flex">
+                                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                            <span>1-year manufacturer warranty</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-8">
+                                    <h4 class="font-semibold mb-4">Express Shipping</h4>
+                                    <div class="flex items-center justify-between py-3 border-b border-gray-100">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-shipping-fast text-primary text-xl mr-3"></i>
+                                            <div>
+                                                <p class="font-medium">Free Shipping</p>
+                                                <p class="text-sm text-gray-600">Estimated delivery in 3-5 business days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="mt-16">
+                    <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-lock text-3xl text-green-500 mb-2"></i>
+                            <span class="text-sm">Secure Payments</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-truck text-3xl text-blue-500 mb-2"></i>
+                            <span class="text-sm">Free Shipping</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-undo-alt text-3xl text-amber-500 mb-2"></i>
+                            <span class="text-sm">30-Day Returns</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-award text-3xl text-purple-500 mb-2"></i>
+                            <span class="text-sm">1-Year Warranty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold">Frequently Asked Questions</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Find answers to common questions about our LED watches
+                </p>
+            </div>
+            
+            <div class="mt-16 max-w-3xl mx-auto">
+                <div class="accordion-item border-b border-gray-200 py-4">
+                    <button class="accordion-btn w-full flex justify-between items-center py-2 font-semibold">
+                        What type of battery does the watch use?
+                        <i class="fas fa-chevron-down text-primary transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="py-4 pr-4 text-gray-600">
+                            Our LED digital watch uses a standard CR2032 coin cell battery that is easily replaceable. Each battery typically lasts 4-6 months with normal usage. Replacement batteries are widely available in stores and online.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item border-b border-gray-200 py-4">
+                    <button class="accordion-btn w-full flex justify-between items-center py-2 font-semibold">
+                        Is the watch water resistant?
+                        <i class="fas fa-chevron-down text-primary transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="py-4 pr-4 text-gray-600">
+                            Yes, the watch has a 5ATM water resistance rating. This means it can withstand water pressure equivalent to a depth of 50 meters. It's suitable for everyday use, swimming, and showering, but not for diving or high-pressure water sports.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item border-b border-gray-200 py-4">
+                    <button class="accordion-btn w-full flex justify-between items-center py-2 font-semibold">
+                        How do I adjust the band size?
+                        <i class="fas fa-chevron-down text-primary transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="py-4 pr-4 text-gray-600">
+                            The silicone band comes with a pin-and-tuck closure system. You can adjust the band by moving the pin to different holes along the strap. Detailed adjustment instructions are included with your purchase, and no special tools are needed.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item border-b border-gray-200 py-4">
+                    <button class="accordion-btn w-full flex justify-between items-center py-2 font-semibold">
+                        What is your return policy?
+                        <i class="fas fa-chevron-down text-primary transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="py-4 pr-4 text-gray-600">
+                            We offer a 30-day money-back guarantee with no questions asked. If you're not completely satisfied with your purchase, simply contact our customer support team within 30 days of delivery to initiate a return. Return shipping is free within the United States.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item border-b border-gray-200 py-4">
+                    <button class="accordion-btn w-full flex justify-between items-center py-2 font-semibold">
+                        How long does shipping take?
+                        <i class="fas fa-chevron-down text-primary transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="py-4 pr-4 text-gray-600">
+                            We offer free USPS Priority Mail shipping on all orders, which typically delivers within 3-5 business days after processing. Processing time is 1-2 business days. You'll receive a tracking number as soon as your order ships.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center">
+                        <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="h-10">
+                        <span class="ml-2 text-xl font-heading font-bold text-primary">nexco</span>
+                    </div>
+                    <p class="mt-4 text-gray-400">
+                        Premium digital watches blending modern technology with timeless style.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Digital Watches</a></li>
+                        <li><a href="#" class="hover:text-white transition">Analog Watches</a></li>
+                        <li><a href="#" class="hover:text-white transition">Smart Watches</a></li>
+                        <li><a href="#" class="hover:text-white transition">Watch Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Help</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Customer Support</a></li>
+                        <li><a href="#" class="hover:text-white transition">Order Tracking</a></li>
+                        <li><a href="#" class="hover:text-white transition">Returns & Exchanges</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-primary"></i>
+                            123 Style Street, New York, NY 10001
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-envelope mt-1 mr-2 text-primary"></i>
+                            support@nexco.com
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-phone mt-1 mr-2 text-primary"></i>
+                            +1 (800) 123-4567
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2023 nexco. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6 text-gray-400 text-sm">
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <!-- INLINE JS FOR INTERACTIVITY & PAYPAL -->
+    
+    <!-- Quantity Update Script -->
     <script>
-        // GALLERY - enlarge on click
-        document.querySelectorAll('.gallery-img').forEach(img => {
-            img.addEventListener('click', function() {
-                const src = img.getAttribute('src');
-                const modal = document.createElement('div');
-                modal.style = "position:fixed;z-index:999;background:rgba(0,0,0,0.93);top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;";
-                modal.innerHTML = '<img src="'+src+'" style="max-width:90vw;max-height:84vh;border-radius:18px;box-shadow:0 8px 40px #000a"/>';
-                modal.addEventListener('click',()=>document.body.removeChild(modal));
-                document.body.appendChild(modal);
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update quantity and price
+            const quantityDisplay = document.getElementById('quantity');
+            const subtotalDisplay = document.getElementById('subtotal');
+            const totalPriceDisplay = document.getElementById('total-price');
+            const unitPrice = 26.22;
+            
+            let quantity = 1;
+            
+            // Quantity buttons
+            document.querySelectorAll('.quantity-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const action = this.getAttribute('data-action');
+                    
+                    if(action === 'increment') {
+                        if(quantity < 10) {
+                            quantity++;
+                        }
+                    } else if(action === 'decrement') {
+                        if(quantity > 1) {
+                            quantity--;
+                        }
+                    }
+                    
+                    quantityDisplay.textContent = quantity;
+                    const subtotal = unitPrice * quantity;
+                    subtotalDisplay.textContent = '$' + subtotal.toFixed(2);
+                    totalPriceDisplay.textContent = '$' + subtotal.toFixed(2);
+                });
             });
-        });
-
-        // PRODUCT VARIANT (only one: Black)
-        document.querySelectorAll('.variant-btn').forEach(btn=>{
-            btn.addEventListener('click', function() {
-                if(btn.closest('#colorVariants')) {
-                    document.querySelectorAll('#colorVariants .variant-btn').forEach(b=>b.classList.remove('selected'));
-                    btn.classList.add('selected');
-                    document.getElementById('paypalColor').value = btn.dataset.value;
-                }
+            
+            // Accordion functionality
+            document.querySelectorAll('.accordion-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    if(content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.add('rotate-180');
+                    }
+                });
             });
-        });
-
-        // QUANTITY SELECTOR
-        const qtyInput = document.getElementById('qty-input');
-        document.getElementById('qty-minus').addEventListener('click', function() {
-            let val = parseInt(qtyInput.value,10);
-            if(val > 1) qtyInput.value = val-1;
-            updatePaypalForm();
-        });
-        document.getElementById('qty-plus').addEventListener('click', function() {
-            let val = parseInt(qtyInput.value,10);
-            qtyInput.value = val+1;
-            updatePaypalForm();
-        });
-        qtyInput.addEventListener('input', function() {
-            if(qtyInput.value < 1 || isNaN(qtyInput.value)) qtyInput.value = 1;
-            updatePaypalForm();
-        });
-        function updatePaypalForm() {
-            document.getElementById('paypalQty').value = qtyInput.value;
-        }
-        updatePaypalForm();
-
-        // COUNTDOWN TIMER (24hr from first visit)
-        function startCountdown(duration) {
-            let timer = duration, hours, minutes, seconds;
-            setInterval(function () {
-                hours = parseInt(timer / 3600, 10);
-                minutes = parseInt((timer % 3600) / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-
-                hours = hours < 10 ? "0" + hours : hours;
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                document.getElementById('countdown').textContent = hours + ":" + minutes + ":" + seconds;
-                if (--timer < 0) { timer = 0; }
-            }, 1000);
-        }
-        // 24 hours = 86400 seconds
-        startCountdown(86400);
-
-        // FAQ ACCORDION
-        document.querySelectorAll('.faq-item').forEach(faq=>{
-            faq.addEventListener('click', function() {
-                faq.classList.toggle('open');
-            });
-        });
-
-        // PAYPAL FORM: update hidden fields on submit
-        document.getElementById('paypalForm').addEventListener('submit', function() {
-            updatePaypalForm();
         });
     </script>
-    <!-- Analytics & Conversion Tracking ready (insert your scripts here) -->
 </body>
 </html>
