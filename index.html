@@ -2,717 +2,630 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="LED Digital Watch - Modern design, professional landing page, seamless PayPal integration. Buy premium watches with security and style.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loose-fitting Tank Top With Built-in Bra | nexco</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1e40af',
-                        secondary: '#3b82f6',
-                        highlight: '#93c5fd',
-                        accent: '#f97316',
-                    }
-                }
-            }
-        }
-    </script>
+    <title>LED Digital Watch | nexco</title>
+    <meta name="keywords" content="LED Digital Watch, nexco, fashion, PayPal, buy now, modern watch, digital watch">
+    <meta name="author" content="nexco">
+    <link rel="icon" href="https://cdn.orderonline.id/uploads/images_4147541749587339195.png">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-        
+        /* ---- GLOBAL RESET & BASE ---- */
+        :root {
+            --primary: #181b19;
+            --accent: #e8b972;
+            --earth1: #262421;
+            --earth2: #62523b;
+            --earth3: #b8ac88;
+            --earth4: #a17947;
+            --cta: #e5a442;
+            --success: #1fb37b;
+            --danger: #e74c3c;
+            --radius: 14px;
+            --shadow: 0 8px 32px rgba(24,27,25,0.08);
+            --font-main: 'Montserrat', Arial, Helvetica, sans-serif;
+            --font-head: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+        * { margin:0; padding:0; box-sizing: border-box; }
+        html, body { height: 100%; }
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-main);
+            background: linear-gradient(120deg, var(--earth1) 0%, var(--earth3) 100%);
+            color: #222;
+            min-height: 100vh;
+            line-height: 1.6;
             scroll-behavior: smooth;
         }
-        
-        h1, h2, h3, h4 {
-            font-family: 'Poppins', sans-serif;
+        a { color: var(--accent); text-decoration: none; }
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-head);
             font-weight: 700;
+            color: var(--primary);
         }
-        
-        .header-gradient {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        img { max-width: 100%; display: block; }
+        button, .btn {
+            background: var(--cta);
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background .18s, transform .13s;
+            box-shadow: var(--shadow);
         }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        button:hover, .btn:hover { background: var(--earth2); transform: translateY(-2px) scale(1.04);}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.2rem;
         }
-        
-        .testimonial-card {
-            transition: all 0.3s ease;
+        .split {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+            gap: 0;
         }
-        
-        .testimonial-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        .split-col {
+            flex: 1 1 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem 2rem;
         }
-        
-        .gallery-image {
-            transition: all 0.3s ease;
+        .hero-bg {
+            background: linear-gradient(180deg, var(--earth1) 0%, var(--earth2) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* ---- HERO ---- */
+        .hero-logo {
+            height: 56px;
+            margin-bottom: 1.1rem;
+        }
+        .hero-title {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 1.2rem;
+        }
+        .hero-desc {
+            color: #e6e7e9;
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+        .hero-cta {
+            background: var(--cta);
+            color: #fff;
+            font-size: 1.35rem;
+            padding: 1rem 2.5rem;
+            margin: 1.4rem 0 0 0;
+        }
+        .product-img-main {
+            box-shadow: 0 8px 36px rgba(0,0,0,0.22);
+            border-radius: var(--radius);
+            width: 380px;
+            margin: 0 auto 1.5rem auto;
+            border: 4px solid var(--earth2);
+        }
+        .hero-badges {
+            display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;
+        }
+        .badge {
+            background: #fff3c2;
+            color: #a17947;
+            font-weight: 700;
+            border-radius: 99px;
+            font-size: 1rem;
+            padding: .4rem 1.2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            display: flex; align-items: center; gap: .35rem;
+        }
+        /* ---- GALLERY ---- */
+        .gallery-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .gallery-img {
+            flex: 1 0 130px;
+            min-width: 130px;
+            max-width: 180px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #e8e0d0;
+            box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+            transition: transform .16s;
             cursor: pointer;
         }
-        
-        .gallery-image:hover {
-            transform: scale(1.03);
+        .gallery-img:hover { transform: scale(1.07);}
+        /* ---- FEATURES ---- */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2.2rem 0;
         }
-        
+        .feature-block {
+            flex: 1 1 180px;
+            min-width: 180px;
+            background: #fff;
+            padding: 1.4rem 1.1rem;
+            border-radius: var(--radius);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+            margin-bottom: 1rem;
+        }
+        .feature-block h4 {
+            color: var(--earth2);
+            margin: .7rem 0 .2rem 0;
+            font-size: 1.17rem;
+        }
+        /* ---- PRODUCT VARIANTS ---- */
+        .variants-row {
+            display: flex;
+            gap: 1.1rem;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
+        }
         .variant-btn {
-            transition: all 0.2s ease;
+            background: #222;
+            color: #fff;
+            border: 2px solid #444;
+            border-radius: 10px;
+            padding: .7rem 1.5rem;
+            font-size: 1.07rem;
+            cursor: pointer;
+            transition: border .16s, background .13s, color .13s;
         }
-        
-        .variant-btn:hover, .variant-btn.selected {
-            border-color: #1e40af;
-            background-color: #eff6ff;
+        .variant-btn.selected, .variant-btn:active {
+            background: var(--cta);
+            color: #fff;
+            border: 2px solid var(--earth2);
         }
-        
+        /* ---- QUANTITY SELECT ---- */
+        .qty-group {
+            display: flex; align-items: center; gap: .4rem; margin-bottom: 1.5rem;
+        }
+        .qty-btn {
+            background: #eee;
+            color: #444;
+            font-size: 1.3rem;
+            height: 38px; width: 38px;
+            border-radius: 10px;
+            border: none;
+        }
+        .qty-inp {
+            width: 50px; text-align: center;
+            font-size: 1.2rem; border-radius: 7px;
+            border: 1.5px solid #bbb;
+            padding: .5rem;
+            margin: 0 .5rem;
+        }
+        /* ---- PRICING ---- */
+        .pricing-row {
+            display: flex; align-items: flex-end; gap: 1.2rem;
+            margin-bottom: 1.7rem;
+        }
+        .price {
+            font-size: 2.2rem; font-weight: 800; color: var(--cta);
+        }
+        .price-old {
+            font-size: 1.17rem; text-decoration: line-through; color: #999; margin-left: .5rem;
+        }
+        .price-off {
+            color: var(--success); font-weight: 700; font-size: 1.1rem;
+            margin-left: .5rem;
+        }
+        /* ---- PAYPAL ---- */
+        .paypal-form {
+            margin-top: .5rem;
+        }
         .paypal-btn {
-            transition: all 0.3s ease;
+            background: #003087;
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            padding: 1rem 1.7rem;
+            border-radius: var(--radius);
+            border: none;
+            display: flex; align-items: center; justify-content: center;
+            gap: .6rem;
+            width: 100%;
+            margin-top: .5rem;
+            transition: background .16s;
         }
-        
-        .paypal-btn:hover {
-            background-color: #002f86;
-            transform: translateY(-2px);
+        .paypal-btn:hover { background: #005ea6;}
+        /* ---- TRUST SIGNALS ---- */
+        .trust-row {
+            display: flex; gap: 1.1rem; flex-wrap: wrap; margin: 1.3rem 0;
+            align-items: center;
         }
-        
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
+        .trust-badge {
+            background: #fff;
+            color: var(--success);
+            font-weight: 600;
+            border-radius: 7px;
+            font-size: .97rem;
+            padding: .45rem 1.1rem;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+            display: flex; align-items: center; gap: .5rem;
         }
-        
-        @media (min-width: 1024px) {
-            .split-section {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                align-items: center;
-                gap: 4rem;
-            }
+        /* ---- COUNTDOWN ---- */
+        .countdown {
+            background: #fffbe2;
+            display: inline-block;
+            padding: .7rem 1.7rem;
+            border-radius: 12px;
+            color: var(--danger);
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+            margin: 1.2rem 0;
         }
-        
-        .product-highlight {
-            position: relative;
-            overflow: hidden;
+        /* ---- TESTIMONIALS & REVIEWS ---- */
+        .testimonials {
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin: 2rem 0 2.5rem 0;
+            padding: 2.2rem 1.5rem 1.5rem 1.5rem;
         }
-        
-        .product-highlight::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, rgba(255,255,255,0) 70%);
-            z-index: 0;
+        .testimonial-row {
+            display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 1.8rem;
         }
-        
-        .size-chart-container {
-            transition: all 0.3s ease;
+        .testimonial {
+            flex: 1 1 220px;
+            min-width: 220px;
+            background: #f7f6f2;
+            border-radius: 10px;
+            padding: 1.3rem 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
-        
-        .size-chart-container:hover {
-            transform: scale(1.02);
+        .testimonial img {
+            width: 36px; height: 36px; border-radius: 50%;
+            margin-right: .7rem;
+            vertical-align: middle;
+        }
+        .testimonial .stars {
+            color: #f4b400;
+            font-size: 1rem;
+            margin-bottom: .2rem;
+        }
+        .testimonial-author {
+            font-size: .98rem;
+            color: var(--earth2);
+            margin-top: .5rem;
+        }
+        /* ---- FAQ ---- */
+        .faq-section {
+            margin: 2.5rem 0 1.7rem 0;
+        }
+        .faq-title {
+            font-size: 2rem; color: var(--primary); margin-bottom: 1.2rem;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 8px;
+            margin: .7rem 0;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+            padding: 1rem 1.1rem;
+            cursor: pointer;
+            transition: box-shadow .13s;
+        }
+        .faq-q {
+            font-weight: 700;
+            color: var(--earth2);
+        }
+        .faq-a {
+            display: none;
+            margin-top: .6rem;
+            color: var(--earth2);
+            font-size: 1rem;
+        }
+        .faq-item.open { box-shadow: 0 3px 16px rgba(0,0,0,0.06);}
+        .faq-item.open .faq-a { display: block;}
+        /* ---- FOOTER ---- */
+        footer {
+            background: var(--earth2);
+            color: #fff;
+            padding: 2.2rem 1rem 1rem 1rem;
+            text-align: center;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+        }
+        .footer-logo {
+            height: 38px; margin-bottom: .7rem;
+        }
+        .footer-links {
+            margin: 1.2rem 0;
+        }
+        .footer-link {
+            color: #ffe;
+            margin: 0 .75rem;
+            font-size: 1rem;
+        }
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 950px) {
+            .split { flex-direction: column; }
+            .split-col { padding: 2rem 1rem;}
+            .product-img-main { width: 94vw; max-width: 400px;}
+            .gallery-row { gap: .7rem;}
+        }
+        @media (max-width: 600px) {
+            .hero-title { font-size: 1.5rem;}
+            .product-img-main { width: 98vw; }
+            .feature-block { min-width: 140px; padding: 1rem .5rem;}
+            .gallery-img { min-width:80px; max-width:110px;}
         }
     </style>
+    <!-- Google Fonts preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="header-gradient text-white sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="h-10 mr-3">
-                    <h1 class="text-xl font-bold">nexco</h1>
+<body>
+    <!-- SPLIT HERO SECTION -->
+    <div class="split">
+        <!-- LEFT: HERO & PRODUCT -->
+        <div class="split-col hero-bg">
+            <div style="width:100%;max-width: 470px;text-align: center;">
+                <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="hero-logo" loading="lazy">
+                <div class="hero-title">LED Digital Watch</div>
+                <div class="hero-desc">
+                    A digital watch with a modern design and stylish LED features. Perfect for your everyday style.<br>
+                    <span style="font-size:1.07rem; color:var(--accent);font-weight:600;">Unisex • Premium Titanium • 22cm Strap • 4cm Dial</span>
                 </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#features" class="hover:text-blue-200 transition">Features</a>
-                    <a href="#gallery" class="hover:text-blue-200 transition">Gallery</a>
-                    <a href="#testimonials" class="hover:text-blue-200 transition">Testimonials</a>
-                    <a href="#pricing" class="hover:text-blue-200 transition">Buy Now</a>
-                </nav>
-                <button class="md:hidden text-xl">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <img src="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg" alt="LED Digital Watch" class="product-img-main" loading="eager">
+                <div class="hero-badges">
+                    <span class="badge"><svg width="19" height="19" style="vertical-align:middle;" fill="none"><circle cx="9.5" cy="9.5" r="9" stroke="#e8b972" stroke-width="2"/><path d="M5.5 10l2.5 2.5L14 7" stroke="#78c19c" stroke-width="2" stroke-linecap="round"/></svg> Money-back Guarantee</span>
+                    <span class="badge"><svg width="20" height="19" fill="none" style="vertical-align:middle;"><rect x="2" y="5" width="16" height="10" rx="2" stroke="#e8b972" stroke-width="2"/><path d="M2 7h16" stroke="#e8b972" stroke-width="2"/></svg> Secure Payment</span>
+                </div>
+                <div class="countdown" id="countdown-timer">Special Offer Ends In <span id="countdown"></span></div>
             </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="split-section">
-                <div class="text-center md:text-left">
-                    <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">Limited Time Offer</span>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-6 mb-4 text-gray-800">Experience Ultimate Comfort with Our <span class="text-primary">Built-in Bra</span> Tank Top</h1>
-                    <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">Wire-free comfort that moves with you. Perfect for yoga, running, or everyday wear.</p>
-                    
-                    <div class="flex flex-col sm:flex-row items-center gap-4 mb-8">
-                        <div class="flex items-center text-accent font-bold">
-                            <i class="fas fa-star text-xl"></i>
-                            <i class="fas fa-star text-xl"></i>
-                            <i class="fas fa-star text-xl"></i>
-                            <i class="fas fa-star text-xl"></i>
-                            <i class="fas fa-star text-xl"></i>
-                            <span class="ml-2 text-gray-800">4.9/5 (850+ reviews)</span>
-                        </div>
-                        <div class="flex items-center text-green-600">
-                            <i class="fas fa-check-circle mr-1"></i>
-                            <span>Free US Shipping</span>
-                        </div>
+        <!-- RIGHT: PRODUCT & CHECKOUT -->
+        <div class="split-col" style="background:#fff;">
+            <div class="container">
+                <!-- PRODUCT GALLERY -->
+                <div style="margin-bottom:1.7rem;">
+                    <div class="gallery-row" id="gallery">
+                        <img src="https://cdn.fastcdnshop.com/image/28b84dd4514716ac4bfa5836a3ef305b3a6537fe-700.jpeg" class="gallery-img" alt="watch 2" loading="lazy">
+                        <img src="https://cdn.fastcdnshop.com/image/31a6ad767be49eb56fc9e56910b5e1581d58ad3d-600.jpeg" class="gallery-img" alt="watch 3" loading="lazy">
+                        <img src="https://cdn.fastcdnshop.com/image/d837f029493ca086100097235ebd2dad1f3730e8-600.jpeg" class="gallery-img" alt="watch 4" loading="lazy">
+                        <img src="https://cdn.fastcdnshop.com/image/508eda4e8f42c546d56b80c461d57aa44e93f6d9-600.jpeg" class="gallery-img" alt="watch 5" loading="lazy">
+                        <img src="https://cdn.fastcdnshop.com/image/e7125fa014aa420a97bedf6977b6f4022fb006aa.jpeg" class="gallery-img" alt="watch 6" loading="lazy">
                     </div>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#pricing" class="bg-primary hover:bg-blue-800 text-white text-lg font-semibold py-4 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
-                            Shop Now - $15.99
-                        </a>
-                        <a href="#gallery" class="border-2 border-primary text-primary font-semibold py-4 px-8 rounded-lg shadow-sm hover:bg-blue-50 transition">
-                            View Gallery
-                        </a>
+                    <div style="margin:1rem 0;">
+                        <img src="https://sc04.alicdn.com/kf/Hf8b2185f7b714d778745f318e03126d0H/247563743/Hf8b2185f7b714d778745f318e03126d0H.jpg" class="gallery-img" alt="watch demo" loading="lazy">
                     </div>
-                    
-                    <div class="mt-8 flex items-center justify-center md:justify-start">
-                        <div class="flex space-x-2">
-                            <div class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-1"></i>
-                                <span>30-Day Returns</span>
-                            </div>
-                            <div class="flex items-center ml-4">
-                                <i class="fas fa-check-circle text-green-500 mr-1"></i>
-                                <span>Secure Payment</span>
-                            </div>
+                </div>
+                <!-- PRODUCT VARIANTS -->
+                <form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form" autocomplete="off">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="fadamxyz@gmail.com">
+                    <input type="hidden" name="item_name" value="LED Digital Watch">
+                    <input type="hidden" name="amount" value="99.00">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="return" value="https://nexco.com/thanks.html">
+                    <input type="hidden" name="cancel_return" value="https://nexco.com/thanks.html">
+                    <!-- Custom fields -->
+                    <input type="hidden" name="on0" value="Color">
+                    <input type="hidden" name="os0" id="paypalColor" value="Black">
+                    <input type="hidden" name="on1" value="Strap Length">
+                    <input type="hidden" name="os1" id="paypalStrap" value="22cm">
+                    <input type="hidden" name="on2" value="Clock Diameter">
+                    <input type="hidden" name="os2" id="paypalDiameter" value="4cm">
+                    <input type="hidden" name="on3" value="Material">
+                    <input type="hidden" name="os3" id="paypalMaterial" value="Quality Titanium">
+                    <input type="hidden" name="quantity" id="paypalQty" value="1">
+                    <!-- VARIANT SELECT -->
+                    <div style="margin-bottom:1.1rem;">
+                        <div style="font-weight:700; font-size:1.05rem; color:var(--earth2); margin-bottom:.4rem;">Color:</div>
+                        <div class="variants-row" id="colorVariants">
+                            <button type="button" class="variant-btn selected" data-value="Black" aria-label="Black">Black</button>
                         </div>
                     </div>
-                </div>
-                <div class="mt-12 md:mt-0 flex justify-center relative">
-                    <div class="relative max-w-md">
-                        <img src="https://cdn.webfastcdn.com/image/64cc6e2ea048230143713170b4dac873c97f7bd7-700.jpeg" 
-                             alt="Tank Top Front" 
-                             class="w-full h-auto rounded-xl shadow-2xl transform rotate-3">
-                        <img src="https://cdn.webfastcdn.com/image/5e3a2c03dd4639e814c982ecf7a25185c1a6419f-600.jpeg" 
-                             alt="Tank Top Side" 
-                             class="absolute -bottom-6 -right-6 w-3/5 h-auto rounded-xl shadow-2xl border-4 border-white transform -rotate-3">
+                    <div class="variants-row" style="margin-bottom:.7rem;">
+                        <span class="variant-btn selected" style="cursor:default;">Strap: 22cm</span>
+                        <span class="variant-btn selected" style="cursor:default;">Diameter: 4cm</span>
+                        <span class="variant-btn selected" style="cursor:default;">Titanium</span>
                     </div>
-                    <div class="absolute top-4 -left-4 bg-white rounded-full p-3 shadow-lg">
-                        <i class="fas fa-heart text-red-500 text-2xl"></i>
+                    <!-- QUANTITY SELECT -->
+                    <div class="qty-group">
+                        <button type="button" class="qty-btn" id="qty-minus" aria-label="Decrease quantity">-</button>
+                        <input type="text" class="qty-inp" id="qty-input" value="1" pattern="[0-9]*" inputmode="numeric" aria-label="Quantity">
+                        <button type="button" class="qty-btn" id="qty-plus" aria-label="Increase quantity">+</button>
                     </div>
-                    <div class="absolute bottom-10 -right-4 bg-white rounded-full p-3 shadow-lg">
-                        <i class="fas fa-bolt text-yellow-500 text-2xl"></i>
+                    <!-- PRICING -->
+                    <div class="pricing-row">
+                        <span class="price" id="currentPrice">$99.00</span>
+                        <span class="price-old">$79.99</span>
+                        <span class="price-off">19% OFF</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Designed for <span class="text-primary">Comfort</span> and <span class="text-accent">Performance</span></h2>
-                <p class="text-gray-600">Experience the perfect combination of style and function with our premium built-in bra tank top.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-spa text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Breathable Comfort</h3>
-                    <p class="text-gray-600 mb-4">Our moisture-wicking fabric keeps you cool and dry during intense workouts or hot summer days.</p>
-                </div>
-                
-                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-running text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Perfect Support</h3>
-                    <p class="text-gray-600 mb-4">Seamless built-in bra provides medium support without wires, so you can move freely without restrictions.</p>
-                </div>
-                
-                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-cut text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Flattering Design</h3>
-                    <p class="text-gray-600 mb-4">Loose-fitting silhouette with strategic seaming creates a figure-flattering look for all body types.</p>
-                </div>
-                
-                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-leaf text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Eco-Friendly Materials</h3>
-                    <p class="text-gray-600 mb-4">Made from recycled polyester and sustainable materials without compromising on comfort or durability.</p>
-                </div>
-                
-                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-tshirt text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Versatile Styling</h3>
-                    <p class="text-gray-600 mb-4">Perfect alone or layered under jackets or cardigans. Transition seamlessly from gym to street.</p>
-                </div>
-                
-                <div class="feature-card bg-blue-50 p-8 rounded-xl border border-blue-100 transition-all">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-gem text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Premium Quality</h3>
-                    <p class="text-gray-600 mb-4">Designed to last with reinforced stitching and color-fast materials that maintain their shape and hue wash after wash.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">See It In <span class="text-primary">Action</span></h2>
-                <p class="text-gray-600">Discover the perfect fit and style for every occasion with our versatile tank top collection.</p>
-            </div>
-            
-            <div class="gallery-container">
-                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
-                    <img src="https://cdn.webfastcdn.com/image/64cc6e2ea048230143713170b4dac873c97f7bd7-700.jpeg" 
-                         alt="Black tank top front view" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
-                    <img src="https://cdn.webfastcdn.com/image/0a89208aec4b81d117e1e92b2ad37f6e993069fb-600.jpeg" 
-                         alt="Tank top side view" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
-                    <img src="https://cdn.webfastcdn.com/image/5e3a2c03dd4639e814c982ecf7a25185c1a6419f-600.jpeg" 
-                         alt="Tank top movement" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
-                    <img src="https://cdn.webfastcdn.com/image/bb06c5fba73cb21e3542340d68c3eb189292d916.gif" 
-                         alt="Tank top fabric detail" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
-                    <img src="https://cdn.webfastcdn.com/image/d883a8eac266a895619e24913c9c0c72759d7ab7.webp" 
-                         alt="Tank top color options" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <div class="gallery-image rounded-xl overflow-hidden shadow-md">
-                    <img src="https://cdn.webfastcdn.com/image/0a89208aec4b81d117e1e92b2ad37f6e993069fb-700.jpeg" 
-                         alt="Tank top back view" 
-                         class="w-full h-full object-cover">
-                </div>
-            </div>
-            
-            <!-- Size Chart -->
-            <div class="mt-16 max-w-4xl mx-auto">
-                <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">Find Your Perfect Fit</h3>
-                <div class="size-chart-container bg-white rounded-xl shadow-lg p-6">
-                    <img src="https://cdn.webfastcdn.com/image/f5bcb03b9c85be15b9107f981355b009c293b8d9.png" 
-                         alt="Size chart" 
-                         class="w-full h-auto rounded-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Real Customers, <span class="text-primary">Real Results</span></h2>
-                <p class="text-gray-600">Join thousands of satisfied customers who love their nexco tank tops.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="testimonial-card bg-gray-50 p-6 rounded-xl border border-gray-200">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.webfastcdn.com/image/c697953a0764d6833ca7582cc6504e8161fc8054-400.webp" 
-                             alt="Sarah M." 
-                             class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-800">Sarah M.</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">"I wear this tank top everywhere - to the gym, running errands, even out to dinner. The support is perfect and it's so comfortable I forget I'm wearing it!"</p>
-                </div>
-                
-                <div class="testimonial-card bg-gray-50 p-6 rounded-xl border border-gray-200">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.webfastcdn.com/image/cb8f9f678be13f2573ca0132a58ec81f3204ca87-400.webp" 
-                             alt="James L." 
-                             class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-800">James L.</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">"Bought this for my wife and she loved it so much that I got two more for her birthday. She says it's the most comfortable workout top she owns."</p>
-                </div>
-                
-                <div class="testimonial-card bg-gray-50 p-6 rounded-xl border border-gray-200">
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.webfastcdn.com/image/ecf691267d7f4c1f4d6d704968b2a1477e80f505-400.webp" 
-                             alt="Maria K." 
-                             class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-800">Maria K.</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">"The quality is impressive for the price. I've washed it multiple times and the shape and color are just like new. Will definitely be ordering more colors!"</p>
-                </div>
-            </div>
-            
-            <div class="mt-12 bg-primary rounded-xl p-8 text-white max-w-4xl mx-auto">
-                <div class="flex flex-col md:flex-row md:items-center">
-                    <div class="md:w-2/3 mb-6 md:mb-0">
-                        <h3 class="text-2xl font-bold mb-2">Join Our Satisfied Customers</h3>
-                        <p>Experience the comfort and quality for yourself</p>
-                    </div>
-                    <div class="md:w-1/3 flex justify-center md:justify-end">
-                        <a href="#pricing" class="bg-white text-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing & Order Section -->
-    <section id="pricing" class="py-16 bg-gradient-to-br from-blue-50 to-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Get Your Perfect <span class="text-primary">Tank Top</span></h2>
-                <p class="text-gray-600">Select your preferred color and size options below</p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white rounded-xl shadow-xl p-8">
-                    <div class="flex flex-col lg:flex-row gap-8">
-                        <div class="lg:w-2/5 flex justify-center">
-                            <img src="https://cdn.webfastcdn.com/image/0a89208aec4b81d117e1e92b2ad37f6e993069fb-700.jpeg" 
-                                 alt="Tank Top" 
-                                 class="h-80 rounded-lg object-cover">
-                        </div>
-                        
-                        <div class="lg:w-3/5">
-                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Loose-fitting Tank Top With Built-in Bra</h3>
-                            <p class="text-gray-600 mb-4">Your everyday essential for comfort and style</p>
-                            
-                            <div class="flex items-center mb-4">
-                                <span class="text-3xl font-bold text-gray-800">$15.99</span>
-                                <span class="ml-4 text-green-600">
-                                    <i class="fas fa-shipping-fast mr-1"></i> Free US Shipping
-                                </span>
-                            </div>
-                            
-                            <div class="mb-6">
-                                <h4 class="font-bold text-gray-700 mb-3">Select Color:</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-black text-white">Black</button>
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-white">White</button>
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-gray-500 text-white">Grey</button>
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-pink-500 text-white">Pink</button>
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-purple-500 text-white">Purple</button>
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg bg-green-500 text-white">Green</button>
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg" style="background: linear-gradient(to right, black 50%, white 50%);">Black+White</button>
-                                    <button class="variant-btn border border-gray-300 px-4 py-2 rounded-lg" style="background: linear-gradient(to right, pink 50%, purple 50%);">Pink+Purple</button>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-6">
-                                <h4 class="font-bold text-gray-700 mb-3">Select Size (UK):</h4>
-                                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">4-6</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">8-10</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">10-12</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">12-16</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">16-20</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">20-24</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">24-26</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">26-30</button>
-                                    <button class="variant-btn border border-gray-300 px-3 py-2 rounded-lg">30-34</button>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-6">
-                                <h4 class="font-bold text-gray-700 mb-3">Quantity:</h4>
-                                <div class="flex items-center">
-                                    <button class="bg-gray-200 px-4 py-2 rounded-l-lg hover:bg-gray-300">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <input type="text" value="1" class="w-16 text-center py-2 border-y border-gray-200">
-                                    <button class="bg-gray-200 px-4 py-2 rounded-r-lg hover:bg-gray-300">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
-                                <div class="flex items-center">
-                                    <i class="fas fa-lock text-blue-600 text-2xl mr-3"></i>
-                                    <span class="font-medium">Secure Checkout Guarantee</span>
-                                </div>
-                            </div>
-                            
-                            <!-- PayPal Integration -->
-                            <form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
-                                <input type="hidden" name="cmd" value="_xclick">
-                                <input type="hidden" name="business" value="fadamxyz@gmail.com">
-                                <input type="hidden" name="item_name" value="Loose-fitting Tank Top With Built-in Bra">
-                                <input type="hidden" name="amount" value="15.99">
-                                <input type="hidden" name="currency_code" value="USD">
-                                <input type="hidden" name="return" value="https://nexco.ayunda.xyz/thanks.html">
-                                <input type="hidden" name="cancel_return" value="https://nexco.ayunda.xyz/thanks.html">
-                                <button type="submit" class="paypal-btn w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-4 px-6 rounded-lg mb-4 flex items-center justify-center">
-                                    <i class="fab fa-paypal text-xl mr-3"></i> 
-                                    Checkout Securely with PayPal - $15.99
-                                </button>
-                            </form>
-                            
-                            <div class="flex flex-wrap justify-center gap-4 mt-6">
-                                <div class="flex items-center">
-                                    <i class="fas fa-check-circle text-green-500 mr-1"></i>
-                                    <span class="text-sm">30-Day Money Back</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="fas fa-check-circle text-green-500 mr-1"></i>
-                                    <span class="text-sm">Free US Shipping</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="fas fa-check-circle text-green-500 mr-1"></i>
-                                    <span class="text-sm">Secure Payment</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Frequently <span class="text-primary">Asked</span> Questions</h2>
-                <p class="text-gray-600">Everything you need to know about our tank tops</p>
-            </div>
-            
-            <div class="max-w-3xl mx-auto space-y-6">
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
-                        <span class="font-medium">What makes your tank tops different?</span>
-                        <i class="fas fa-chevron-down"></i>
+                    <button type="submit" class="paypal-btn" id="paypalBtn">
+                        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" width="28" height="28" style="margin-right:.4rem;"> Buy Now with PayPal - $99.00
                     </button>
-                    <div class="faq-answer p-5">
-                        <p class="text-gray-600">Our tank tops feature a proprietary seamless built-in bra design that provides comfortable support without the discomfort of underwires. The lightweight, moisture-wicking fabric combined with the loose-fitting silhouette creates a top that's perfect for both workouts and casual wear.</p>
+                </form>
+                <!-- TRUST & URGENCY -->
+                <div class="trust-row">
+                    <span class="trust-badge"><svg width="20" height="20" fill="none"><circle cx="10" cy="10" r="9" stroke="#1fb37b" stroke-width="2"/><path d="M6 10.5l3 3 5-5" stroke="#1fb37b" stroke-width="2"/></svg> 30-Day Money-Back</span>
+                    <span class="trust-badge"><svg width="20" height="20" fill="none"><rect x="3" y="7" width="14" height="8" rx="2" stroke="#e5a442" stroke-width="2"/><path d="M3 9h14" stroke="#e5a442" stroke-width="2"/></svg> Free US Shipping</span>
+                    <span class="trust-badge"><svg width="20" height="20" fill="none"><rect x="4" y="4" width="12" height="12" rx="6" stroke="#e5a442" stroke-width="2"/><path d="M10 7v3l2 2" stroke="#e5a442" stroke-width="2"/></svg> Secure Checkout</span>
+                </div>
+                <!-- FEATURES / BENEFITS -->
+                <div class="features">
+                    <div class="feature-block">
+                        <h4>Modern LED Display</h4>
+                        <div>Crisp, clear time and date display day or night.</div>
+                    </div>
+                    <div class="feature-block">
+                        <h4>Quality Titanium</h4>
+                        <div>Sleek, lightweight, and ultra-durable design.</div>
+                    </div>
+                    <div class="feature-block">
+                        <h4>Universal Fit (22cm)</h4>
+                        <div>Comfortably fits most wrists - unisex, ages 20-50.</div>
+                    </div>
+                    <div class="feature-block">
+                        <h4>Water Resistant</h4>
+                        <div>Perfect for daily use, gym, and outdoor activities.</div>
+                    </div>
+                    <div class="feature-block">
+                        <h4>Easy Setup</h4>
+                        <div>Just wear and go - no app or complex settings.</div>
                     </div>
                 </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
-                        <span class="font-medium">How do I find the right size?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer p-5">
-                        <p class="text-gray-600">We provide a detailed size chart that matches UK sizes with weight ranges for the perfect fit. If you're between sizes, we recommend sizing up for a looser fit or sizing down for more support. Remember all our tank tops are designed with stretch material for comfortable flexibility.</p>
+                <!-- SOCIAL PROOF / TESTIMONIALS -->
+                <div class="testimonials">
+                    <h2 style="text-align:center; color:var(--primary); font-size:1.5rem;margin-bottom:1.1rem;">What Customers Say</h2>
+                    <div class="testimonial-row">
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <div>"Absolutely love the design and comfort! Feels premium and fits all my outfits."</div>
+                            <div class="testimonial-author">— Sarah W.</div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <div>"Super fast shipping. PayPal checkout was seamless, and the watch is great value."</div>
+                            <div class="testimonial-author">— Mike T.</div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <div>"The LED is bright and clear, and the titanium build feels sturdy. Highly recommend!"</div>
+                            <div class="testimonial-author">— Jenna P.</div>
+                        </div>
                     </div>
+                    <div style="text-align:center; font-size:.99rem; color:#888;">Rated 4.9/5 by <b>2,100+</b> US customers</div>
                 </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
-                        <span class="font-medium">How do I care for the tank top?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer p-5">
-                        <p class="text-gray-600">For best results, machine wash cold on gentle cycle with like colors and tumble dry low. Avoid bleaching or ironing directly on printed areas. The high-quality fabric maintains its shape and color through multiple washes when cared for properly.</p>
-                    </div>
-                </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
-                        <span class="font-medium">What is your return policy?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer p-5">
-                        <p class="text-gray-600">We offer a 30-day satisfaction guarantee. If you're not completely happy with your purchase, simply return the unworn tank top with original tags for a full refund or exchange. Return shipping is free within the US. International customers are responsible for return shipping costs.</p>
-                    </div>
-                </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-5 bg-gray-50 hover:bg-blue-50 flex justify-between items-center">
-                        <span class="font-medium">How long does shipping take?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer p-5">
-                        <p class="text-gray-600">US orders typically ship within 1 business day and arrive in 3-5 business days via USPS. International shipping times vary by destination but typically take 10-20 business days. All customers receive tracking information once their order ships.</p>
+                <!-- FAQ SECTION -->
+                <div class="faq-section">
+                    <div class="faq-title">Frequently Asked Questions</div>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-q">Is the LED Digital Watch water resistant?</div>
+                            <div class="faq-a">Yes, it's designed to withstand daily splashes and rain, but is not suitable for deep water activities.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">How do I adjust the time on the watch?</div>
+                            <div class="faq-a">Simply use the side button to set the time. No app or tools required.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">Does it fit small/large wrists?</div>
+                            <div class="faq-a">With a 22cm strap, it's adjustable to fit most wrist sizes comfortably.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">Is this product covered by a warranty?</div>
+                            <div class="faq-a">Yes, every purchase comes with a 30-day money-back guarantee.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">How soon will I get my order?</div>
+                            <div class="faq-a">US orders ship within 1-2 business days and typically arrive in 3-5 business days.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">Can I pay with PayPal?</div>
+                            <div class="faq-a">Yes! PayPal is fully integrated for secure, fast checkout.</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 pt-16 pb-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="h-8 mr-2">
-                        <span class="text-white font-bold text-lg">nexco</span>
-                    </div>
-                    <p class="mb-4">Premium athletic wear designed for comfort and performance.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-white font-bold mb-4">Shop</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white">Tank Tops</a></li>
-                        <li><a href="#" class="hover:text-white">Leggings</a></li>
-                        <li><a href="#" class="hover:text-white">Sports Bras</a></li>
-                        <li><a href="#" class="hover:text-white">Shorts</a></li>
-                        <li><a href="#" class="hover:text-white">New Arrivals</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-white font-bold mb-4">Information</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white">About Us</a></li>
-                        <li><a href="#" class="hover:text-white">Contact</a></li>
-                        <li><a href="#" class="hover:text-white">Shipping Policy</a></li>
-                        <li><a href="#" class="hover:text-white">Returns & Exchanges</a></li>
-                        <li><a href="#" class="hover:text-white">Size Guide</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-white font-bold mb-4">Contact</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
-                            <span>support@nexco.com</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
-                            <span>123 Fitness St, Active City, AC 12345, USA</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="pt-8 border-t border-gray-800 text-center">
-                <p>&copy; 2023 nexco. All rights reserved.</p>
-                <div class="mt-4 flex justify-center space-x-6 text-sm">
-                    <a href="#" class="hover:text-white">Privacy Policy</a>
-                    <a href="#" class="hover:text-white">Terms of Service</a>
-                    <a href="#" class="hover:text-white">Refund Policy</a>
-                </div>
-            </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="footer-logo" loading="lazy">
+        <div style="font-size:1.15rem; font-weight:600; margin-bottom: .7rem;">nexco</div>
+        <div style="color:#ffe7b0; font-size:.98rem;">Professional business providing quality products and services</div>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a> |
+            <a href="#" class="footer-link">Terms of Service</a> |
+            <a href="#" class="footer-link">Contact</a>
         </div>
+        <div style="font-size:.97rem; margin-top:.6rem;">&copy; 2025 nexco. All rights reserved.</div>
     </footer>
-
+    <!-- INLINE JS FOR INTERACTIVITY & PAYPAL -->
     <script>
-        // Quantity selector
-        document.querySelector('.fa-plus').addEventListener('click', function() {
-            const input = document.querySelector('input[type="text"]');
-            let value = parseInt(input.value);
-            input.value = value + 1;
-        });
-        
-        document.querySelector('.fa-minus').addEventListener('click', function() {
-            const input = document.querySelector('input[type="text"]');
-            let value = parseInt(input.value);
-            if (value > 1) {
-                input.value = value - 1;
-            }
-        });
-        
-        // Variant selection
-        const variantButtons = document.querySelectorAll('.variant-btn');
-        variantButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Remove selected class from all buttons
-                variantButtons.forEach(btn => btn.classList.remove('selected'));
-                // Add selected class to clicked button
-                this.classList.add('selected');
+        // GALLERY - enlarge on click
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.addEventListener('click', function() {
+                const src = img.getAttribute('src');
+                const modal = document.createElement('div');
+                modal.style = "position:fixed;z-index:999;background:rgba(0,0,0,0.93);top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;";
+                modal.innerHTML = '<img src="'+src+'" style="max-width:90vw;max-height:84vh;border-radius:18px;box-shadow:0 8px 40px #000a"/>';
+                modal.addEventListener('click',()=>document.body.removeChild(modal));
+                document.body.appendChild(modal);
             });
         });
-        
-        // FAQ accordion
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                const isOpen = answer.style.display === 'block';
-                
-                // Close all answers
-                document.querySelectorAll('.faq-answer').forEach(ans => {
-                    ans.style.display = 'none';
-                });
-                
-                // Reset all icons
-                document.querySelectorAll('.faq-question i').forEach(icon => {
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                });
-                
-                // Toggle current answer
-                if (!isOpen) {
-                    answer.style.display = 'block';
-                    this.querySelector('i').classList.remove('fa-chevron-down');
-                    this.querySelector('i').classList.add('fa-chevron-up');
+
+        // PRODUCT VARIANT (only one: Black)
+        document.querySelectorAll('.variant-btn').forEach(btn=>{
+            btn.addEventListener('click', function() {
+                if(btn.closest('#colorVariants')) {
+                    document.querySelectorAll('#colorVariants .variant-btn').forEach(b=>b.classList.remove('selected'));
+                    btn.classList.add('selected');
+                    document.getElementById('paypalColor').value = btn.dataset.value;
                 }
             });
         });
-        
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+
+        // QUANTITY SELECTOR
+        const qtyInput = document.getElementById('qty-input');
+        document.getElementById('qty-minus').addEventListener('click', function() {
+            let val = parseInt(qtyInput.value,10);
+            if(val > 1) qtyInput.value = val-1;
+            updatePaypalForm();
+        });
+        document.getElementById('qty-plus').addEventListener('click', function() {
+            let val = parseInt(qtyInput.value,10);
+            qtyInput.value = val+1;
+            updatePaypalForm();
+        });
+        qtyInput.addEventListener('input', function() {
+            if(qtyInput.value < 1 || isNaN(qtyInput.value)) qtyInput.value = 1;
+            updatePaypalForm();
+        });
+        function updatePaypalForm() {
+            document.getElementById('paypalQty').value = qtyInput.value;
+        }
+        updatePaypalForm();
+
+        // COUNTDOWN TIMER (24hr from first visit)
+        function startCountdown(duration) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                document.getElementById('countdown').textContent = hours + ":" + minutes + ":" + seconds;
+                if (--timer < 0) { timer = 0; }
+            }, 1000);
+        }
+        // 24 hours = 86400 seconds
+        startCountdown(86400);
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-item').forEach(faq=>{
+            faq.addEventListener('click', function() {
+                faq.classList.toggle('open');
             });
         });
+
+        // PAYPAL FORM: update hidden fields on submit
+        document.getElementById('paypalForm').addEventListener('submit', function() {
+            updatePaypalForm();
+        });
     </script>
+    <!-- Analytics & Conversion Tracking ready (insert your scripts here) -->
 </body>
 </html>
