@@ -1,661 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>LED Digital Watch | nexco</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Buy the stylish LED Digital Watch at 39% OFF. Unisex, titanium, modern design. Fast shipping. Secure PayPal payment. Trusted by customers in the US.">
-  <meta name="keywords" content="LED, Digital Watch, Fashion, Titanium, Unisex, nexco, PayPal, Modern Watch, US">
-  <meta property="og:title" content="LED Digital Watch | nexco">
-  <meta property="og:description" content="A modern, stylish LED Digital Watch. Quality titanium, secure PayPal checkout, fast shipping in the US. Order now!">
-  <meta property="og:image" content="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg">
-  <meta name="robots" content="index, follow">
-  <link rel="icon" href="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" type="image/png">
-  <style>
-    :root {
-      --primary: #0d1f36;
-      --accent: #1e90ff;
-      --white: #fff;
-      --black: #111;
-      --gray: #f5f5f7;
-      --shadow: 0 4px 24px rgba(13,31,54,0.08);
-      --radius: 12px;
-      --font-main: 'Inter', Arial, sans-serif;
-    }
-    html { box-sizing: border-box; }
-    *, *:before, *:after { box-sizing: inherit; }
-    body {
-      font-family: var(--font-main);
-      background: var(--gray);
-      color: var(--primary);
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background: var(--white);
-      box-shadow: var(--shadow);
-      padding: 1.2rem 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    header img.logo { height: 48px; margin-right: 1.2rem; }
-    header .business-name {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: var(--primary);
-    }
-    main { flex: 1; }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-    /* HERO SECTION */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: center;
-      margin-bottom: 2.5rem;
-    }
-    .hero-img-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 1.1rem;
-    }
-    .hero-img-gallery img {
-      width: 100%;
-      border-radius: var(--radius);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      background: var(--white);
-    }
-    .hero-content {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-    .hero-title {
-      font-size: 2.7rem;
-      font-weight: 800;
-      color: var(--primary);
-      margin-bottom: 0.3rem;
-      line-height: 1.1;
-    }
-    .hero-desc {
-      font-size: 1.18rem;
-      color: #444;
-      margin-bottom: 0.5rem;
-    }
-    .hero-cta {
-      display: flex;
-      gap: 1.2rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .paypal-btn, .buy-btn {
-      background: var(--accent);
-      color: var(--white);
-      font-weight: 700;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 7px;
-      padding: 0.84rem 2.2rem;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(30,144,255,0.09);
-      transition: background .18s;
-      display: flex;
-      align-items: center;
-      gap: 0.7em;
-    }
-    .paypal-btn:hover, .buy-btn:hover {
-      background: #185fa3;
-    }
-    .trust-badges {
-      display: flex;
-      align-items: center;
-      gap: 1.3rem;
-      margin-top: 0.4rem;
-    }
-    .trust-badges img {
-      height: 28px;
-      aspect-ratio: 1/1;
-      border-radius: 6px;
-      background: var(--white);
-      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
-    }
-    .urgency {
-      color: #e74c3c;
-      font-weight: 600;
-      font-size: 1.06rem;
-      margin-top: 0.2rem;
-      letter-spacing: 0.2px;
-    }
-    /* COUNTDOWN TIMER */
-    .timer-wrap {
-      background: #faf4f0;
-      border-radius: 7px;
-      padding: 0.85em 1.2em;
-      display: inline-block;
-      margin-top: 0.6em;
-    }
-    .timer-label {
-      font-weight: 700;
-      color: #b32d00;
-      margin-right: 0.7em;
-    }
-    .timer {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.23rem;
-      color: #d35400;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-    /* PRODUCT SHOWCASE */
-    .product-showcase {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.2rem;
-      margin-bottom: 2.5rem;
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 2.2rem 1.6rem;
-    }
-    .showcase-imgs {
-      display: flex;
-      flex-direction: row;
-      gap: 0.9em;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
-    .showcase-imgs img {
-      width: 110px;
-      border-radius: 8px;
-      object-fit: cover;
-      background: var(--gray);
-    }
-    .showcase-features {
-      display: flex;
-      flex-direction: column;
-      gap: 1.1rem;
-    }
-    .feature-list {
-      padding: 0;
-      margin: 0 0 0.5rem 0;
-      list-style: none;
-    }
-    .feature-list li {
-      margin-bottom: 0.5rem;
-      font-size: 1.08rem;
-      display: flex;
-      align-items: start;
-      gap: 0.6em;
-    }
-    .feature-list li:before {
-      content: '✔️';
-      margin-right: 0.7em;
-      font-size: 1em;
-      color: var(--accent);
-    }
-    .spec-table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 0.2rem;
-      font-size: 0.99rem;
-    }
-    .spec-table th, .spec-table td {
-      padding: 0.48em 1em 0.48em 0;
-      text-align: left;
-      color: #222;
-    }
-    .spec-table th {
-      color: #888;
-      font-weight: 400;
-      background: #f8fafd;
-    }
-    /* VARIANTS */
-    .variants {
-      margin: 1.2rem 0 0.7rem 0;
-      display: flex;
-      align-items: flex-end;
-      gap: 1.6rem;
-      flex-wrap: wrap;
-    }
-    .variant-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-    .variant-label {
-      font-size: 1.01em;
-      margin-bottom: 0.2rem;
-      font-weight: 600;
-    }
-    .variant-select, .qty-input {
-      font-size: 1em;
-      padding: 0.32em 0.75em;
-      border-radius: 6px;
-      border: 1px solid #d1d5db;
-      min-width: 70px;
-      background: #fafbfc;
-      color: #1a202c;
-      outline: none;
-      transition: border 0.17s;
-    }
-    .qty-input { width: 56px; }
-    /* SOCIAL PROOF */
-    .social-proof {
-      margin: 2.7rem 0;
-      display: grid;
-      grid-template-columns: 1fr 0.85fr;
-      gap: 2rem;
-      align-items: flex-start;
-    }
-    .testimonials, .reviews {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 1.5rem 1.1rem;
-    }
-    .testimonials-title, .reviews-title {
-      font-size: 1.18rem;
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-      color: #1e90ff;
-    }
-    .testimonial, .review {
-      margin-bottom: 1.1em;
-    }
-    .testimonial:last-child, .review:last-child { margin-bottom: 0; }
-    .testimonial-msg, .review-msg {
-      font-size: 0.99em;
-      color: #222;
-      margin-bottom: 0.3em;
-    }
-    .testimonial-author, .review-author {
-      font-size: 0.96em;
-      color: #888;
-    }
-    .trust-signal-row {
-      display: flex;
-      align-items: center;
-      gap: 0.9em;
-      margin-bottom: 0.7em;
-    }
-    .trust-signal {
-      background: #e6f3ff;
-      padding: 0.34em 0.9em;
-      border-radius: 6px;
-      font-size: 0.98em;
-      color: #185fa3;
-      font-weight: 600;
-    }
-    /* FAQ */
-    .faq-section {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 2.2rem 1.1rem 2.2rem 2.3rem;
-      margin-bottom: 2.5rem;
-    }
-    .faq-title {
-      font-size: 1.22rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 1.1rem;
-    }
-    .faq-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .faq-q {
-      font-weight: 600;
-      margin-bottom: 0.29em;
-      cursor: pointer;
-      color: var(--primary);
-      transition: color 0.12s;
-    }
-    .faq-q:hover { color: var(--accent); }
-    .faq-a {
-      color: #475569;
-      font-size: 1.01em;
-      margin-bottom: 1em;
-      display: none;
-      padding-left: 1.5em;
-      border-left: 2px solid #e6f3ff;
-    }
-    .faq-q.open + .faq-a { display: block; }
-    /* FOOTER */
-    footer {
-      background: var(--primary);
-      color: var(--white);
-      padding: 2rem 0 1.2rem 0;
-      text-align: center;
-      font-size: 1.05rem;
-      border-top-left-radius: var(--radius);
-      border-top-right-radius: var(--radius);
-      margin-top: 2rem;
-    }
-    footer .footer-links {
-      margin: 0.6rem 0 1.1rem 0;
-      display: flex;
-      gap: 1.2em;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    footer a {
-      color: #b5ddff;
-      text-decoration: none;
-      transition: color 0.13s;
-    }
-    footer a:hover { color: #fff; }
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      .hero, .product-showcase, .social-proof { grid-template-columns: 1fr; }
-      .hero-img-gallery, .showcase-imgs { flex-direction: row; overflow-x: auto; }
-    }
-    @media (max-width: 650px) {
-      .container { padding: 0.7rem; }
-      .hero-title { font-size: 1.34rem; }
-      .hero-content { gap: 0.7rem; }
-      .product-showcase, .faq-section { padding: 1.1rem 0.7rem; }
-      .social-proof { gap: 1.1rem; }
-      .testimonials, .reviews { padding: 0.8rem 0.5rem; }
-    }
-    @media (max-width: 480px) {
-      .product-showcase, .faq-section { padding: 0.4rem 0.1rem; }
-      .hero-content { gap: 0.6rem; }
-      .variants { gap: 0.8rem; }
-      .footer-links { gap: 0.7em; }
-    }
-    /* Accessibility focus */
-    button, select, input:focus {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Shadow Luxe Armor - nexco</title>
+    
+            <style>
+                body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background: #f8fafc;color: #222;margin:0;}
+                header { background: #2563eb; color: #fff; padding:0;margin-bottom: 0; }
+                .container { max-width: 1100px; margin:0 auto; padding:0 12px 30px 12px;}
+                .logo { font-size:1.4rem; font-weight:800; letter-spacing:-.01em; }
+                .contact { font-size:1.08rem; display:flex; align-items:center; gap:7px; }
+                .phone-icon { display:inline-block;vertical-align:middle; }
+                main.product-section {margin-top: 0;}
+                .product-section .container { display:grid; grid-template-columns:1fr 1fr; gap:36px; }
+                .product-gallery { padding: 0 0 10px 0; }
+                .main-image { width:100%; height:420px; object-fit:cover; border-radius:10px; box-shadow:0 3px 14px 0 #e5e7eb;}
+                .thumbnails { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:13px 0 0 0;}
+                .thumbnail { width:100%; height:75px; object-fit:cover; border-radius:6px; cursor:pointer;border:2px solid #fff; box-shadow:0 1px 5px 0 #e5e7eb;}
+                .thumbnail:hover { border:2px solid #2563eb; }
+                .product-info { background:#fff; border-radius:13px; box-shadow:0 4px 20px 0 #dbeafe; padding:28px 18px 18px 18px;}
+                .product-title { font-size:1.42rem; font-weight:800; color:#222; margin-bottom:6px; }
+                .price { font-size:1.28rem; color:#2563eb; font-weight:800; margin-bottom:7px; }
+                .desc { color:#444; margin-bottom: 12px; font-size:1.05rem;}
+                .feature-list { margin:0 0 17px 0; padding-left: 19px;}
+                .feature-list li { font-size:1rem; color:#059669; margin-bottom:2px;}
+                #orderForm {margin-top:7px;}
+                input, select, textarea, button {
+                    width: 100%; padding: 12px; margin-bottom: 10px;
+                    border: 1px solid #ddd; border-radius: 5px;
+                    font-size: 1rem;
+                }
+                select { cursor:pointer; }
+                button { cursor:pointer; }
+                .whatsapp-btn {
+                    background: #25d366; color: white; font-weight: bold;
+                    border: none; padding: 15px; border-radius: 5px; cursor: pointer;
+                    font-size: 1.13rem; margin-top: 10px;
+                    transition: background 0.15s;
+                }
+                .whatsapp-btn:hover { background: #1caf5a; }
+                .quantity { margin-bottom: 20px; }
+                .qty-controls {
+                    display: flex; align-items: center; gap: 10px; margin: 10px 0;
+                }
+                .qty-controls button {
+                    width: 36px; height: 36px; border-radius: 50%;
+                    background: #2563eb; color: white; border: none;
+                    font-size: 18px; font-weight: bold; cursor: pointer;
+                }
+                .qty-controls input {
+                    width: 50px; text-align: center; font-size: 16px; font-weight: bold;
+                    margin: 0; border: 2px solid #ddd;
+                }
+                .qty-info { color: #666; font-size: 14px; }
+                .customer-notes {
+                    margin: 20px 0; padding: 13px 9px; background: #f0f9ff; border-radius: 8px;
+                    border-left: 4px solid #3b82f6;
+                }
+                .customer-notes label {
+                    display: block; margin-bottom: 8px; font-weight: 600; color: #1e40af;
+                }
+                .customer-notes textarea {
+                    border-color: #93c5fd; background: white;
+                }
+                .notes-help {
+                    display: block; margin-top: 5px; color: #6366f1; font-size: 12px;
+                }
+                .order-summary {
+                    background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px;
+                    padding: 18px 15px; margin: 20px 0 0 0;
+                }
+                .summary-row {
+                    display: flex; justify-content: space-between; padding: 8px 0;
+                    border-bottom: 1px solid #e2e8f0;
+                }
+                .summary-row.total {
+                    border-top: 2px solid #3b82f6; border-bottom: none;
+                    font-size: 18px; font-weight: bold; color: #1e40af;
+                    margin-top: 10px; padding-top: 15px;
+                }
+                .payment-methods { margin: 20px 0 0 0; }
+                .payment-methods h4 { margin-bottom: 7px; font-size:1.07rem; }
+                .payment-options { display: flex; gap: 16px; }
+                .payment-option { display: flex; flex-direction: column; align-items: center; gap: 3px;}
+                .payment-option img { width: 50px; height: 30px; border-radius: 5px;}
+                /* Address */
+                input[id*="manual"] {
+                    border-color: #f59e0b; background-color: #fffbeb;
+                }
+                input[id*="manual"]:focus {
+                    border-color: #d97706; box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2);
+                }
+                @media (max-width: 900px) {
+                    .product-section .container { grid-template-columns: 1fr; }
+                }
+                @media (max-width: 600px) {
+                    .product-info { padding: 10px 4px 13px 4px;}
+                }
+            </style>
+            
 </head>
 <body>
-  <header>
-    <img src="https://cdn.orderonline.id/uploads/images_4147541749587339195.png" alt="nexco logo" class="logo" loading="lazy">
-    <span class="business-name">nexco</span>
-  </header>
-  <main>
-    <div class="container">
-      <!-- HERO SECTION -->
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-img-gallery" aria-label="Product gallery">
-          <img src="https://cdn.fastcdnshop.com/image/1878d83a82ef3aa16e7f88f8138889cf3f6435ee.jpeg" alt="LED Digital Watch - main product image" loading="eager">
-        </div>
-        <div class="hero-content">
-          <h1 id="hero-title" class="hero-title">Modern LED Digital Watch <span style="color:#1e90ff;">- 39% OFF</span></h1>
-          <div class="hero-desc">
-            Experience style and innovation with the LED Digital Watch. Crafted from premium titanium for lasting quality. Perfect for men and women ages 20-50.
-          </div>
-          <div class="timer-wrap" aria-label="Limited time offer">
-            <span class="timer-label">Limited Offer Ends In:</span>
-            <span class="timer" id="countdown">00:59:59</span>
-          </div>
-          <div class="urgency">Hurry! Only a few left in stock.</div>
-          <form id="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form" style="margin-top:1em;">
-            <input type="hidden" name="cmd" value="_xclick">
-            <input type="hidden" name="business" value="fadamxyz@gmail.com">
-            <input type="hidden" name="item_name" value="LED Digital Watch">
-            <input type="hidden" name="amount" id="paypalAmount" value="26.22">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="return" value="https://nexco.com/thanks.html">
-            <input type="hidden" name="cancel_return" value="https://nexco.com/thanks.html">
-            <input type="hidden" name="on0" value="Color">
-            <input type="hidden" name="os0" id="paypalColor" value="Black">
-            <input type="hidden" name="on1" value="Size">
-            <input type="hidden" name="os1" id="paypalSize" value="22cm Strap">
-            <input type="hidden" name="quantity" id="paypalQty" value="1">
-            <div class="variants" aria-label="Product options">
-              <div class="variant-group">
-                <label for="colorSelect" class="variant-label">Color</label>
-                <select id="colorSelect" class="variant-select" aria-label="Select color">
-                  <option value="Black" selected>Black</option>
-                </select>
-              </div>
-              <div class="variant-group">
-                <label for="sizeSelect" class="variant-label">Strap Length</label>
-                <select id="sizeSelect" class="variant-select" aria-label="Select size">
-                  <option value="22cm Strap" selected>22cm</option>
-                </select>
-              </div>
-              <div class="variant-group">
-                <label for="qtyInput" class="variant-label">Qty</label>
-                <input type="number" min="1" max="10" value="1" class="qty-input" id="qtyInput" aria-label="Quantity">
-              </div>
-              <div class="variant-group">
-                <span class="variant-label">Price</span>
-                <span id="dynamicPrice" style="font-weight:700;font-size:1.15em;color:#e67e22;">$26.22</span>
-              </div>
+    <header>
+        <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:15px 0;">
+            <div class="logo">nexco</div>
+            <div class="contact">
+                <span style="font-size:1.2rem;">📱</span>
+                <span style="margin-left:8px;">081225681788</span>
             </div>
-            <button type="submit" class="paypal-btn" aria-label="Buy now with PayPal">
-              <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" style="height:22px;vertical-align:bottom;">
-              Buy Now with PayPal - $26.22
-            </button>
-          </form>
-          <div class="trust-badges" aria-label="Trust badges">
-            <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Money-back Guarantee" title="30-Day Money-back Guarantee">
-            <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="Secure Payment" title="100% Secure Payment">
-            <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="Fast Shipping" title="Fast Shipping">
-          </div>
         </div>
-      </section>
-      <!-- PRODUCT SHOWCASE -->
-      <section class="product-showcase" aria-labelledby="product-details-title">
-        <div class="showcase-imgs" aria-label="Additional product images">
-          <img src="https://cdn.fastcdnshop.com/image/28b84dd4514716ac4bfa5836a3ef305b3a6537fe-700.jpeg" alt="LED Watch Side View" loading="lazy">
-          <img src="https://cdn.fastcdnshop.com/image/31a6ad767be49eb56fc9e56910b5e1581d58ad3d-600.jpeg" alt="LED Watch Display" loading="lazy">
-          <img src="https://cdn.fastcdnshop.com/image/d837f029493ca086100097235ebd2dad1f3730e8-600.jpeg" alt="LED Watch Features" loading="lazy">
-          <img src="https://cdn.fastcdnshop.com/image/508eda4e8f42c546d56b80c461d57aa44e93f6d9-600.jpeg" alt="LED Watch Packaging" loading="lazy">
-          <img src="https://cdn.fastcdnshop.com/image/e7125fa014aa420a97bedf6977b6f4022fb006aa.jpeg" alt="LED Watch on Wrist" loading="lazy">
+    </header>
+    <main class="product-section">
+        <div class="container">
+            <div class="product-gallery">
+                <img src="https://cdn.orderonline.id/uploads/images_7470321735137133587.png" id="mainImage" alt="Gambar Utama" class="main-image">
+                <div class="thumbnails" style="margin-top:14px;">
+                    <img src="https://cdn.orderonline.id/uploads/images_7470321735137133587.png" class="thumbnail" onclick="changeMainImage('https://cdn.orderonline.id/uploads/images_7470321735137133587.png')" alt="Thumbnail 1"><img src="https://cdn.orderonline.id/uploads/images_1073891735137133315.png" class="thumbnail" onclick="changeMainImage('https://cdn.orderonline.id/uploads/images_1073891735137133315.png')" alt="Thumbnail 2"><img src="https://cdn.orderonline.id/uploads/images_9983551735137131504.png" class="thumbnail" onclick="changeMainImage('https://cdn.orderonline.id/uploads/images_9983551735137131504.png')" alt="Thumbnail 3"><img src="https://cdn.orderonline.id/uploads/images_2981291735137132861.png" class="thumbnail" onclick="changeMainImage('https://cdn.orderonline.id/uploads/images_2981291735137132861.png')" alt="Thumbnail 4"><img src="https://cdn.orderonline.id/uploads/images_2151971735137133080.png" class="thumbnail" onclick="changeMainImage('https://cdn.orderonline.id/uploads/images_2151971735137133080.png')" alt="Thumbnail 5"><img src="https://cdn.orderonline.id/uploads/images_4228991735138658026.gif" class="thumbnail" onclick="changeMainImage('https://cdn.orderonline.id/uploads/images_4228991735138658026.gif')" alt="Thumbnail 6">
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-title">Shadow Luxe Armor</div>
+                <div class="price">Rp 185.000</div>
+                <div class="desc">Premium Leather Jacket for Style and Durability</div>
+                <ul class="feature-list"><li>✔️ Timeless Design
+
+A sleek</li><li>✔️ minimalist design that never goes out of style.</li></ul>
+                <form id="orderForm" autocomplete="off" onsubmit="return false;">
+                    
+                <div class="variant-selection">
+                    <label>Pilih Varian:</label>
+                    <select id="variantSelect" required onchange="updateOrderSummary()">
+                        <option value="">-- Pilih Varian --</option>
+                        <option value="BROWN-S">BROWN-S</option><option value="BROWN-M">BROWN-M</option><option value="BROWN-L">BROWN-L</option><option value="BROWN-XL">BROWN-XL</option><option value="BROWN-XXL">BROWN-XXL</option><option value="BLACK-S">BLACK-S</option><option value="BLACK-M">BLACK-M</option><option value="BLACK-L">BLACK-L</option><option value="BLACK-XL">BLACK-XL</option><option value="BLACK-XXL">BLACK-XXL</option>
+                    </select>
+                </div>
+                    <div class="quantity">
+                        <label>Jumlah Pesanan:</label>
+                        <div class="qty-controls">
+                            <button type="button" onclick="changeQty(-1)">-</button>
+                            <input type="number" id="qty" value="1" min="1" max="99" onchange="updateTotal()">
+                            <button type="button" onclick="changeQty(1)">+</button>
+                        </div>
+                        <small class="qty-info">Harga per pcs: Rp <span id="unitPrice">185.000</span></small>
+                    </div>
+                    <input type="text" id="customerName" placeholder="Nama Lengkap" required>
+                    <input type="tel" id="customerPhone" placeholder="No. WhatsApp" required>
+                    <textarea id="customerAddress" placeholder="Alamat Lengkap" required></textarea>
+                    <div class="customer-notes">
+                        <label>Catatan Tambahan (Opsional):</label>
+                        <textarea id="customerNotes" placeholder="Contoh: Saya pesan 3 pcs - 1 warna merah ukuran L, 2 warna hijau ukuran M dan XL. Atau catatan khusus lainnya..." rows="3"></textarea>
+                        <small class="notes-help">💡 Gunakan catatan ini jika memesan beberapa varian berbeda atau ada permintaan khusus</small>
+                    </div>
+                    <select id="province" onchange="loadCities()" required>
+                        <option value="">Pilih Provinsi</option>
+                        <option value="manual">🖊️ Tulis Manual (Jika tidak ada di list)</option>
+                    </select>
+                    <select id="city" onchange="loadDistricts()" required>
+                        <option value="">Pilih Kota</option>
+                        <option value="manual">🖊️ Tulis Manual (Jika tidak ada di list)</option>
+                    </select>
+                    <select id="district" onchange="handleDistrictChange()" required>
+                        <option value="">Pilih Kecamatan</option>
+                        <option value="manual">🖊️ Tulis Manual (Jika tidak ada di list)</option>
+                    </select>
+                    <input type="text" id="manualProvince" placeholder="Tulis Provinsi Manual" style="display:none;">
+                    <input type="text" id="manualCity" placeholder="Tulis Kota Manual" style="display:none;">
+                    <input type="text" id="manualDistrict" placeholder="Tulis Kecamatan Manual" style="display:none;">
+                    <div class="order-summary">
+                        <div class="summary-row">
+                            <span>Harga per pcs:</span>
+                            <span id="unitPriceDisplay">Rp 185.000</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Jumlah:</span>
+                            <span id="quantityDisplay">1 pcs</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">Rp 185.000</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Kode Unik:</span>
+                            <span id="uniqueCode">+Rp 123</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>TOTAL PEMBAYARAN:</span>
+                            <span id="total">Rp 185.000</span>
+                        </div>
+                        
+                <div class="payment-methods">
+                    <h4>Metode Pembayaran:</h4>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='30' viewBox='0 0 50 30'%3E%3Crect width='50' height='30' rx='4' fill='%232563EB'/%3E%3Ctext x='25' y='18' text-anchor='middle' font-size='10' fill='white' font-weight='bold'%3EBANK%3C/text%3E%3C/svg%3E" alt="Bank Transfer">
+                            <span>Transfer Bank</span>
+                        </div>
+                        <div class="payment-option">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='30' viewBox='0 0 50 30'%3E%3Crect width='50' height='30' rx='4' fill='%2310B981'/%3E%3Ctext x='25' y='18' text-anchor='middle' font-size='10' fill='white' font-weight='bold'%3ECOD%3C/text%3E%3C/svg%3E" alt="Cash on Delivery">
+                            <span>COD</span>
+                        </div>
+                        <div class="payment-option">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='30' viewBox='0 0 50 30'%3E%3Crect width='50' height='30' rx='4' fill='%23EC4899'/%3E%3Ctext x='25' y='18' text-anchor='middle' font-size='9' fill='white' font-weight='bold'%3EE-WALLET%3C/text%3E%3C/svg%3E" alt="E-Wallet">
+                            <span>E-Wallet</span>
+                        </div>
+                    </div>
+                </div>
+            
+                    </div>
+                    <button type="button" onclick="submitOrder()" class="whatsapp-btn">
+                        📱 Pesan via WhatsApp
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="showcase-features">
-          <h2 id="product-details-title" style="font-size:1.3em;font-weight:700;color:#185fa3;">LED Digital Watch - Features & Specs</h2>
-          <ul class="feature-list">
-            <li>Modern, minimalist titanium design</li>
-            <li>Displays time & date in bright LED</li>
-            <li>Unisex, fits most wrists (strap: 22cm)</li>
-            <li>Perfect for daily wear, work, and sports</li>
-            <li>Easy, secure PayPal checkout</li>
-            <li>US-based shipping & support</li>
-          </ul>
-          <table class="spec-table" aria-label="Product specifications">
-            <tr><th>Category</th><td>Fashion</td></tr>
-            <tr><th>Material</th><td>Quality Titanium</td></tr>
-            <tr><th>Color</th><td>Black</td></tr>
-            <tr><th>Strap Length</th><td>22cm</td></tr>
-            <tr><th>Clock Diameter</th><td>4cm</td></tr>
-            <tr><th>Functions</th><td>Time & Date Display</td></tr>
-            <tr><th>Package</th><td>1x LED Digital Watch</td></tr>
-          </table>
-          <div class="showcase-video" style="margin-top:1.1em;">
-            <img src="https://sc04.alicdn.com/kf/Hf8b2185f7b714d778745f318e03126d0H/247563743/Hf8b2185f7b714d778745f318e03126d0H.jpg" alt="Watch Demo" style="max-width:140px;border-radius:8px;margin-right:0.5em;">
-            <img src="https://sc04.alicdn.com/kf/H28c891f50b3645709476e14262eb1ec3f/247563743/H28c891f50b3645709476e14262eb1ec3f.jpg" alt="Watch Demo 2" style="max-width:140px;border-radius:8px;margin-right:0.5em;">
-            <img src="https://sc04.alicdn.com/kf/H2cdf398d2e9d4fd1bf63ea4bf2757f25t/247563743/H2cdf398d2e9d4fd1bf63ea4bf2757f25t.jpg" alt="Watch Demo 3" style="max-width:140px;border-radius:8px;">
-          </div>
-        </div>
-      </section>
-      <!-- SOCIAL PROOF -->
-      <section class="social-proof" aria-label="Customer testimonials and reviews">
-        <div class="testimonials">
-          <div class="testimonials-title">What Our Customers Say</div>
-          <div class="testimonial">
-            <div class="testimonial-msg">"Absolutely love this watch! Modern, stylish and feels premium. Shipping was fast and PayPal made checkout easy."</div>
-            <div class="testimonial-author">- Jessica T., New York</div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-msg">"Bought one for myself and my brother. Great value for the price, and looks way more expensive than it is."</div>
-            <div class="testimonial-author">- Marcus R., California</div>
-          </div>
-        </div>
-        <div class="reviews">
-          <div class="reviews-title">Recent Reviews</div>
-          <div class="review">
-            <span class="review-msg">"Super comfortable and the LED is really bright. Recommend for anyone looking for a modern watch."</span>
-            <div class="review-author">Ava L. • ★★★★★</div>
-          </div>
-          <div class="review">
-            <span class="review-msg">"Really happy with my purchase. Strap fits perfectly and the titanium feels solid."</span>
-            <div class="review-author">Daniel P. • ★★★★★</div>
-          </div>
-        </div>
-      </section>
-      <div class="trust-signal-row" aria-label="Trust signals">
-        <span class="trust-signal">30-Day Money-back Guarantee</span>
-        <span class="trust-signal">Secure PayPal Checkout</span>
-        <span class="trust-signal">Privacy Protected</span>
-        <span class="trust-signal">US-Focused Support</span>
-      </div>
-      <!-- FAQ SECTION -->
-      <section class="faq-section" aria-label="Frequently Asked Questions">
-        <div class="faq-title">Frequently Asked Questions</div>
-        <ul class="faq-list">
-          <li>
-            <div class="faq-q" tabindex="0">Is the watch unisex?</div>
-            <div class="faq-a">Yes, the LED Digital Watch is designed for both men and women (fits most wrists 20-50 years old).</div>
-          </li>
-          <li>
-            <div class="faq-q" tabindex="0">What is the warranty and return policy?</div>
-            <div class="faq-a">We offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund.</div>
-          </li>
-          <li>
-            <div class="faq-q" tabindex="0">How do I pay?</div>
-            <div class="faq-a">We accept PayPal for secure, fast payments. No PayPal account required.</div>
-          </li>
-          <li>
-            <div class="faq-q" tabindex="0">How long does shipping take?</div>
-            <div class="faq-a">Orders ship within 1 business day. US delivery typically in 3-7 days.</div>
-          </li>
-          <li>
-            <div class="faq-q" tabindex="0">Is the strap adjustable?</div>
-            <div class="faq-a">Yes, the 22cm strap fits most wrists and is easily adjustable.</div>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer>
-    <div>
-      &copy; 2025 nexco &mdash; Professional business providing quality products/services
-    </div>
-    <div class="footer-links">
-      <a href="mailto:fadamxyz@gmail.com">Contact</a>
-      <a href="https://nexco.com/thanks.html">Order Status</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Refund Policy</a>
-    </div>
-    <div>
-      Powered by <a href="https://www.paypal.com/" target="_blank" rel="noopener">PayPal</a>
-    </div>
-  </footer>
-  <script>
-    // Countdown Timer
-    function startCountdown(duration, display) {
-      let timer = duration, minutes, seconds;
-      setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-        display.textContent =
-          (minutes < 10 ? '0' : '') + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-        if (--timer < 0) timer = duration;
-      }, 1000);
-    }
-    window.addEventListener('DOMContentLoaded', function() {
-      // 1 hour timer
-      var oneHour = 59 * 60 + 59,
-          display = document.querySelector('#countdown');
-      if(display) startCountdown(oneHour, display);
+    </main>
+    <footer style="text-align:center; color:#7f8899; font-size:13px; margin:25px 0 15px 0;">&copy; 2025 nexco. Powered by nexcoAI.</footer>
+    
+            <script>
+                // Address data
+                const indonesiaData = {"Jawa Barat":{"Bandung":["Cidadap","Cicendo","Coblong","Bandung Wetan"],"Bekasi":["Bekasi Barat","Bekasi Timur","Bekasi Selatan","Bekasi Utara"],"Bogor":["Bogor Tengah","Bogor Utara","Bogor Selatan","Bogor Timur"],"Depok":["Pancoran Mas","Sukmajaya","Sawangan","Cipayung"],"Cimahi":["Cimahi Selatan","Cimahi Tengah","Cimahi Utara"]},"DKI Jakarta":{"Jakarta Pusat":["Gambir","Tanah Abang","Menteng","Senen"],"Jakarta Selatan":["Kebayoran Baru","Tebet","Setiabudi","Mampang Prapatan"],"Jakarta Timur":["Matraman","Pulogadung","Jatinegara","Duren Sawit"],"Jakarta Barat":["Grogol Petamburan","Taman Sari","Tambora","Kebon Jeruk"],"Jakarta Utara":["Penjaringan","Pademangan","Tanjung Priok","Koja"]},"Jawa Tengah":{"Semarang":["Semarang Tengah","Semarang Utara","Semarang Selatan","Semarang Timur"],"Solo":["Laweyan","Serengan","Pasar Kliwon","Jebres"],"Yogyakarta":["Gondokusuman","Jetis","Tegalrejo","Umbulharjo"]},"Jawa Timur":{"Surabaya":["Genteng","Gubeng","Tegalsari","Wonokromo"],"Malang":["Klojen","Blimbing","Kedungkandang","Sukun"],"Sidoarjo":["Sidoarjo","Buduran","Candi","Porong"]},"Banten":{"Tangerang":["Tangerang Kota","Cipondoh","Karawaci","Pinang"],"Serang":["Serang Kota","Kasemen","Walantaka","Curug"]},"Bali":{"Denpasar":["Denpasar Barat","Denpasar Selatan","Denpasar Timur","Denpasar Utara"],"Badung":["Mengwi","Abiansemal","Petang","Kuta Utara"]},"Sumatera Utara":{"Medan":["Medan Kota","Medan Barat","Medan Timur","Medan Utara"],"Binjai":["Binjai Kota","Binjai Barat","Binjai Timur","Binjai Utara"]},"Sumatera Selatan":{"Palembang":["Ilir Barat I","Ilir Timur I","Seberang Ulu I","Kertapati"]},"Kalimantan Timur":{"Balikpapan":["Balikpapan Kota","Balikpapan Barat","Balikpapan Timur","Balikpapan Selatan"],"Samarinda":["Samarinda Kota","Samarinda Ulu","Samarinda Ilir","Sungai Kunjang"]},"Sulawesi Selatan":{"Makassar":["Makassar","Mariso","Mamajang","Tamalate"]}};
+                // Store price, product, WA
+                const PRODUCT_PRICE = 185000;
+                const productName = "Shadow Luxe Armor";
+                const whatsappNumber = "081225681788";
+                function changeMainImage(src) {
+                    document.getElementById('mainImage').src = src;
+                }
+                function changeQty(delta) {
+                    const qtyInput = document.getElementById('qty');
+                    let newQty = parseInt(qtyInput.value) + delta;
+                    if (newQty < 1) newQty = 1;
+                    if (newQty > 99) newQty = 99;
+                    qtyInput.value = newQty;
+                    updateTotal();
+                }
+                function updateTotal() {
+                    const qty = parseInt(document.getElementById('qty').value);
+                    const basePrice = PRODUCT_PRICE;
+                    const subtotal = basePrice * qty;
+                    // Kode unik harus tetap sama pada satu sesi order
+                    let uniqueCode = window.currentUniqueCode;
+                    if (!uniqueCode) {
+                        uniqueCode = Math.floor(Math.random() * 800) + 100;
+                        window.currentUniqueCode = uniqueCode;
+                    }
+                    const total = subtotal + uniqueCode;
+                    document.getElementById('unitPriceDisplay').textContent = 'Rp ' + basePrice.toLocaleString('id-ID');
+                    document.getElementById('quantityDisplay').textContent = qty + ' pcs';
+                    document.getElementById('subtotal').textContent = 'Rp ' + subtotal.toLocaleString('id-ID');
+                    document.getElementById('uniqueCode').textContent = '+Rp ' + uniqueCode;
+                    document.getElementById('total').textContent = 'Rp ' + total.toLocaleString('id-ID');
+                }
+                function loadCities() {
+                    const province = document.getElementById('province').value;
+                    const citySelect = document.getElementById('city');
+                    const manualProvince = document.getElementById('manualProvince');
+                    if (province === 'manual') {
+                        manualProvince.style.display = 'block';
+                        manualProvince.required = true;
+                        citySelect.disabled = true;
+                        citySelect.value = '';
+                        loadDistricts();
+                    } else {
+                        manualProvince.style.display = 'none';
+                        manualProvince.required = false;
+                        citySelect.disabled = false;
+                        // Populate cities
+                        citySelect.innerHTML = '<option value="">Pilih Kota</option><option value="manual">🖊️ Tulis Manual (Jika tidak ada di list)</option>';
+                        if (province && indonesiaData[province]) {
+                            Object.keys(indonesiaData[province]).forEach(city => {
+                                citySelect.innerHTML += '<option value="'+city+'">'+city+'</option>';
+                            });
+                        }
+                        loadDistricts();
+                    }
+                }
+                function loadDistricts() {
+                    const province = document.getElementById('province').value;
+                    const city = document.getElementById('city').value;
+                    const districtSelect = document.getElementById('district');
+                    const manualCity = document.getElementById('manualCity');
+                    if (city === 'manual') {
+                        manualCity.style.display = 'block';
+                        manualCity.required = true;
+                        districtSelect.disabled = true;
+                        districtSelect.value = '';
+                        handleDistrictChange();
+                    } else {
+                        manualCity.style.display = 'none';
+                        manualCity.required = false;
+                        districtSelect.disabled = false;
+                        // Populate districts
+                        districtSelect.innerHTML = '<option value="">Pilih Kecamatan</option><option value="manual">🖊️ Tulis Manual (Jika tidak ada di list)</option>';
+                        if (province && city && indonesiaData[province] && indonesiaData[province][city]) {
+                            indonesiaData[province][city].forEach(district => {
+                                districtSelect.innerHTML += '<option value="'+district+'">'+district+'</option>';
+                            });
+                        }
+                        handleDistrictChange();
+                    }
+                }
+                function handleDistrictChange() {
+                    const district = document.getElementById('district').value;
+                    const manualDistrict = document.getElementById('manualDistrict');
+                    if (district === 'manual') {
+                        manualDistrict.style.display = 'block';
+                        manualDistrict.required = true;
+                    } else {
+                        manualDistrict.style.display = 'none';
+                        manualDistrict.required = false;
+                    }
+                }
+                function updateOrderSummary() {
+                    // Trigger recalc if needed
+                    updateTotal();
+                }
+                window.onload = function() {
+                    // Province options
+                    const provinceSelect = document.getElementById('province');
+                    provinceSelect.innerHTML = '<option value="">Pilih Provinsi</option>';
+                    Object.keys(indonesiaData).forEach(prov => {
+                        provinceSelect.innerHTML += '<option value="'+prov+'">'+prov+'</option>';
+                    });
+                    provinceSelect.innerHTML += '<option value="manual">🖊️ Tulis Manual (Jika tidak ada di list)</option>';
+                    // Hide manual address fields
+                    document.getElementById('manualProvince').style.display = 'none';
+                    document.getElementById('manualCity').style.display = 'none';
+                    document.getElementById('manualDistrict').style.display = 'none';
+                    // Set first image
+                    changeMainImage('https://cdn.orderonline.id/uploads/images_7470321735137133587.png');
+                    updateTotal();
+                };
+                // WhatsApp order submission
+                function submitOrder() {
+                    let selectedVariant = '';
+                    const variantSelect = document.getElementById('variantSelect');
+                    const colorSelect = document.getElementById('colorSelect');
+                    const sizeSelect = document.getElementById('sizeSelect');
+                    if (variantSelect && variantSelect.style.display !== 'none' && variantSelect.value) {
+                        selectedVariant = variantSelect.value;
+                    } else if (colorSelect && sizeSelect) {
+                        const color = colorSelect.value || '';
+                        const size = sizeSelect.value || '';
+                        if (color || size) {
+                            selectedVariant = [color, size].filter(v => v).join(' - ');
+                        }
+                    }
+                    // Address
+                    const province = document.getElementById('province').value === 'manual' 
+                        ? document.getElementById('manualProvince').value 
+                        : document.getElementById('province').value;
+                    const city = document.getElementById('city').value === 'manual' 
+                        ? document.getElementById('manualCity').value 
+                        : document.getElementById('city').value;
+                    const district = document.getElementById('district').value === 'manual' 
+                        ? document.getElementById('manualDistrict').value 
+                        : document.getElementById('district').value;
+                    // Validate
+                    const customerName = document.getElementById('customerName').value;
+                    const customerPhone = document.getElementById('customerPhone').value;
+                    const customerAddress = document.getElementById('customerAddress').value;
+                    const customerNotes = document.getElementById('customerNotes').value;
+                    if (!customerName || !customerPhone || !customerAddress || !province || !city || !district) {
+                        alert('Mohon lengkapi semua data yang diperlukan (nama, WhatsApp, alamat lengkap, provinsi, kota, kecamatan)');
+                        return;
+                    }
+                    // Calc
+                    const qty = parseInt(document.getElementById('qty').value);
+                    const basePrice = PRODUCT_PRICE;
+                    const subtotal = basePrice * qty;
+                    const uniqueCode = window.currentUniqueCode || Math.floor(Math.random() * 800) + 100;
+                    window.currentUniqueCode = uniqueCode;
+                    const total = subtotal + uniqueCode;
+                    // WhatsApp message
+                    const message =
+`🛒 PESANAN ${productName}
 
-      // FAQ open/close
-      document.querySelectorAll('.faq-q').forEach(function(q) {
-        q.addEventListener('click', function() {
-          let open = q.classList.toggle('open');
-          let a = q.nextElementSibling;
-          document.querySelectorAll('.faq-q').forEach(function(otherQ){
-            if(otherQ!==q) otherQ.classList.remove('open');
-            if(otherQ.nextElementSibling!==a) otherQ.nextElementSibling.style.display='none';
-          });
-          if(open) a.style.display='block'; else a.style.display='none';
-        });
-        q.addEventListener('keypress', function(e) {
-          if(e.key==='Enter'||e.key===' ') q.click();
-        });
-      });
+📋 DETAIL PESANAN:
+• Produk: ${productName}
+${selectedVariant ? '• Varian Dipilih: ' + selectedVariant : ''}
+• Harga Satuan: Rp ${basePrice.toLocaleString('id-ID')}
+• Jumlah: ${qty} pcs
+• Subtotal: Rp ${subtotal.toLocaleString('id-ID')}
+• Kode Unik: +Rp ${uniqueCode}
+• 💰 TOTAL PEMBAYARAN: Rp ${total.toLocaleString('id-ID')}
 
-      // Variant/quantity -> price, PayPal sync
-      const colorSelect = document.getElementById('colorSelect');
-      const sizeSelect = document.getElementById('sizeSelect');
-      const qtyInput = document.getElementById('qtyInput');
-      const dynamicPrice = document.getElementById('dynamicPrice');
-      const basePrice = 26.22;
+👤 DATA PENERIMA:
+• Nama: ${customerName}
+• WhatsApp: ${customerPhone}
+• Alamat: ${customerAddress}
+• Wilayah: ${district}, ${city}, ${province}
 
-      function updatePriceAndPaypal() {
-        let qty = Math.max(1, parseInt(qtyInput.value,10)||1);
-        let price = (basePrice * qty).toFixed(2);
-        dynamicPrice.textContent = `$${price}`;
-        document.getElementById('paypalAmount').value = price;
-        document.getElementById('paypalColor').value = colorSelect.value;
-        document.getElementById('paypalSize').value = sizeSelect.value;
-        document.getElementById('paypalQty').value = qty;
-      }
+${customerNotes ? `📝 CATATAN TAMBAHAN:
+${customerNotes}
 
-      colorSelect.onchange = updatePriceAndPaypal;
-      sizeSelect.onchange = updatePriceAndPaypal;
-      qtyInput.oninput = updatePriceAndPaypal;
+` : ''}💳 METODE PEMBAYARAN: 
+• Transfer Bank (BCA, Mandiri, BRI, BNI)
+• COD (Cash on Delivery)
+• E-Wallet (GoPay, OVO, DANA)
 
-      // Express Checkout (PayPal Smart Button)
-      if(window.paypal){
-        paypal.Buttons({
-          style: { layout: 'horizontal', color: 'blue', shape: 'rect', label: 'paypal' },
-          createOrder: function(data, actions) {
-            let qty = Math.max(1, parseInt(qtyInput.value,10)||1);
-            return actions.order.create({
-              purchase_units: [{
-                description: "LED Digital Watch",
-                amount: { value: (basePrice*qty).toFixed(2), currency_code: "USD" }
-              }]
-            });
-          },
-          onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-              window.location.href = "https://nexco.com/thanks.html";
-            });
-          },
-          onCancel: function(data) {
-            window.location.href = "https://nexco.com/thanks.html";
-          },
-          onError: function(err) {
-            alert("Payment Error: " + err);
-          }
-        }).render('.paypal-form');
-      }
-
-      // Conversion tracking (template - replace with your analytics)
-      window.dataLayer = window.dataLayer || [];
-      document.getElementById('paypalForm').addEventListener('submit', function() {
-        window.dataLayer.push({
-          event: 'purchase_initiated',
-          product: 'LED Digital Watch',
-          value: document.getElementById('paypalAmount').value,
-          currency: 'USD'
-        });
-      });
-    });
-  </script>
-  <!-- PayPal checkout JS (Express) -->
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" async></script>
+Mohon konfirmasi pesanan ini. Terima kasih! 🙏`;
+                    const encodedMessage = encodeURIComponent(message);
+                    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+                    window.open(whatsappUrl, '_blank');
+                }
+            </script>
+            
 </body>
 </html>
+            
